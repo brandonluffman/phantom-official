@@ -1,0 +1,100 @@
+.card {
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 15px 20px 40px rgba(216, 211, 211, 0.4);
+    margin:2rem 2rem 4rem 2rem;
+    word-spacing: -0.1rem;
+    position: relative;
+    padding-bottom:1rem;
+
+  }
+
+
+  .card:hover {
+    cursor:pointer;
+    transform: perspective(3000px) rotateY(5deg);
+  }
+
+  
+  .imgContainer {
+    position: relative;
+    width: 100%;
+    height:25vh;
+  }
+  
+
+  .card img {
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:absolute;
+    bottom:0;
+    padding-bottom:0.4rem;
+    width:90%;
+  }
+  
+  .text {
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    }
+  
+  .author {
+    display: flex;
+    align-items: center;
+
+  }
+  .author img {
+    width: 3rem;
+    height:3rem;
+    border-radius: 50%;
+  }
+
+
+  .authorname {
+    margin-left: 1rem;
+    font-size:1.5rem;
+    font-weight:400;
+  }
+
+  .date {
+    font-size:1.2rem;
+  text-align: right;
+  font-weight:400;
+  }
+  
+  .title {
+    font-size:2.5rem;
+    line-height:3.5vh;
+    margin-bottom: 1rem;
+    word-spacing: -0.01vw;
+    font-weight: 600;
+  }
+
+  .tag {
+    background-color: #B9D9EB;
+    border-radius: 20px;
+    padding:0.2rem 0.9rem 0.3rem 0.9rem;
+    border:none;
+    font-size:1.2rem;
+    color:rgb(40,40,40);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    box-shadow: 0px 8px 15px rgba(200, 200, 200, 0.3);
+
+  }
+
+  .description {
+    color:grey;
+    margin-bottom: 8rem;
+    font-size:1.3rem;
+    line-height:3vh;
+    padding-bottom:5rem;
+  }
+
