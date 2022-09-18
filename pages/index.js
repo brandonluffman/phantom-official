@@ -172,12 +172,6 @@ export default function Home({ posts }) {
                     </div>
             </div>
           </div>
-
-
-      
-
-
-
         <div className="container-fluid blog-container" id="blog">
           <div className="row blog-row">
             <h3 className="container-header testimonials-header">Blog</h3>

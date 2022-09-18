@@ -4,7 +4,7 @@ function IndexPage() {
   return (
     <div>
       <Head>
-          <title>Phantom SEO & Web Design | ROI Focused SEO & Web Development Firm</title>
+          <title>Phantom SEO | ROI Focused SEO & Web Development Firm</title>
           <meta charset="utf-8" />
           <meta name="description" content="Join Phantom and drive your business past it's competitors with our clever website design, unrivaled SEO performance and extensive media campaigns." />
           <meta property="og:type" content="website" />
