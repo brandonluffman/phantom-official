@@ -4,6 +4,7 @@ import '../styles/Slug.module.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/navbar.css';
 import '../styles/blogpage.css';
+import '../styles/contact.css';
 import '../styles/footer.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';

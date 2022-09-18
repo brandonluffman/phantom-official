@@ -6,6 +6,7 @@
     transition:0.3s all ease !important;
     height:150px;
     justify-content: space-between;
+    font-family: "DM Sans", sans-serif;
 }
 
 #navbar {
@@ -16,6 +17,11 @@
 #brand-img {
     transition:0.35s all ease !important;
 
+}
+
+#nav-brand-img {
+    width:75px;
+    transition: 0.35s all ease !important;
 }
 
 .nav-menu {
@@ -47,7 +53,7 @@
 }
 
 .nav-link:hover{
-    color: rgb(158, 204, 247) !important;
+    color: rgb(100, 100, 100) !important;
 }
 
 
@@ -72,7 +78,7 @@
     color:black !important;
 }
 .dropdown:hover {
-    color: rgb(158, 204, 247) !important;
+    color: rgb(100, 100,100) !important;
 }
 
 
@@ -122,7 +128,7 @@
 }
 
 .dropdown-caret  {
-    color:rgb(173, 173, 173);
+    color:rgb(40,40,40);
     margin-left:0.5rem;
 }
 

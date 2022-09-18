@@ -26,14 +26,14 @@ function Nav() {
                   document.getElementById("navbar").style.height = "75px";
                   document.getElementById("navbar").style.background = "rgba(245,245,245,0.75)";
                   document.getElementById("navbar").style.boxShadow = "1px 2px 4px lightgrey";
-                  document.getElementById("brand-img").style.width = "50px";
+                  document.getElementById("nav-brand-img").style.width = "50px";
                   document.getElementById("nav-menu").style.top = "7.6rem";
 
                 } else {
                   document.getElementById("navbar").style.height = "150px";
                   document.getElementById("navbar").style.background = "transparent";
                   document.getElementById("navbar").style.boxShadow = "none";
-                  document.getElementById("brand-img").style.width = "75px";
+                  document.getElementById("nav-brand-img").style.width = "75px";
                   document.getElementById("nav-menu").style.top = "14rem";
 
                 }
@@ -47,7 +47,7 @@ function Nav() {
       <nav className="navbar fixed-top" id="navbar">
         <a href="home" className="nav-logo">
           <div className="brand-img" id="brand-img">
-            <img src='/img.png' alt="Logo" width='60px' height='60px' />
+            <img src='/img.png' alt="Logo" id='nav-brand-img' />
           </div>
         </a>
         <div className="" onClick={toggleNav}>
@@ -86,7 +86,7 @@ function Nav() {
             </UncontrolledDropdown>
           </li>
           <li className="nav-item">
-          <Link href='/#blog'>
+          <Link href='/blogs'>
             <a href="" className="nav-link">
               Blog
             </a>
