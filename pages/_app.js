@@ -6,6 +6,7 @@ import '../styles/navbar.css';
 import '../styles/blogpage.css';
 import '../styles/contact.css';
 import '../styles/footer.css';
+import '../styles/subscribe.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false

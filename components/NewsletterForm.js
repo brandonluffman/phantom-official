@@ -67,7 +67,7 @@ const NewsletterForm = ( { status, message, onValidated }) => {
           <input
             onChange={(event) => setEmail(event?.target?.value ?? '')}
             type="email"
-            placeholder="Your email"
+            placeholder="Enter Your Email..."
             className="mr-2"
             onKeyUp={(event) => handleInputKeyEvent(event)}
           />

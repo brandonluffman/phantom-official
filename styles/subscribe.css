@@ -1,0 +1,27 @@
+.mc-field-group {
+    width:50%;
+}
+.mr-2 {
+    width:100%;
+    background:none;
+    border:none;
+    border-bottom:1px solid black;
+    border-left:1px solid black;
+    font-size:1.5rem;
+    padding-left:1rem;
+    padding:1rem 0rem 0.5rem 0.5rem;
+}
+.mr-2::placeholder {
+    font-size:1.5rem;
+    
+}
+.mr-2:focus {
+    outline:none;
+}
+.wp-block-button__link {
+    color:white;
+    background:black;
+    border:none;
+    padding: 0.8rem 1.5rem;
+    font-size:1.5rem;
+}
