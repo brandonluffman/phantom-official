@@ -140,7 +140,7 @@ export default function Home({ posts }) {
               <div className='hello-img-div'>
                 <img src='/EDITION.png' className="hello-img" alt='Client Service Overview' loading="lazy" />
                 <div className='hello-text-div'>
-                  <h1 className="hello-name">Certi Candle Co.</h1>
+                  <h4 className="hello-name">Certi Candle Co.</h4>
                   <h6 className="hello-industry">Ecommerce</h6>
                 </div>
               </div>

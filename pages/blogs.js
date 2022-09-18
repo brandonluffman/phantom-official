@@ -61,7 +61,7 @@ const Blogs = ({ posts }) => {
     <>
       <Nav />
     <div className='blogs-container'>
-      <h1 className='blogs-header'>Blogs</h1>
+      <h3 className='blogs-header'>Blogs</h3>
       <main className='blogs-main'>
       {posts.map((post) => (
         <BlogCard

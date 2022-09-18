@@ -483,6 +483,7 @@ display: none;
 .hello-name {
     padding-top:3rem;
     letter-spacing: -.15vw;
+    font-size:2rem;
 }
 
 .hello-p {

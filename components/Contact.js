@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <div className="contact-form-div">
       <form ref={form} onSubmit={sendEmail} className='contact-form' id='myForm'>
-        <h2 className="contact-form-header">Contact Us</h2>
+        <h4 className="contact-form-header">Contact Us</h4>
         <label className='contact-form-item name-label'>Name</label>
         <input type="text" name="user_name" className='contact-form-item name-input'  placeholder="Enter Your Name" required />
         <label className='contact-form-item email-label'>Email</label>
