@@ -132,7 +132,7 @@ export default function Home({ posts }) {
           </div>
         </div>
 
-
+{/*
         <div className="container-fluid work-container" id="work">
           <div className="row work-row">
             <h3 className="container-header work-header">Our Work</h3>
@@ -153,7 +153,7 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-
+  */}
 
         <div className="container-fluid services-container" id="services">
           <div className="row">
