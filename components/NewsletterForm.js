@@ -94,4 +94,4 @@ const NewsletterForm = ( { status, message, onValidated }) => {
   );
 }
 
-export default NewsletterForm;
+export default NewsletterForm
