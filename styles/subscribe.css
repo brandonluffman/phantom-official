@@ -24,4 +24,14 @@
     border:none;
     padding: 0.8rem 1.5rem;
     font-size:1.5rem;
+    transition: 0.2s all ease;
+}
+.wp-block-button__link:hover {
+    color:black;
+    background:white;
+    transform:translateY(-5px);
+}
+
+.newsletter-form-info {
+    margin-top:2rem;
 }

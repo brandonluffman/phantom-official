@@ -6,7 +6,7 @@
     transition:0.3s all ease !important;
     height:150px;
     justify-content: space-between;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #navbar {
@@ -47,7 +47,7 @@
 
 .nav-link{
     font-size: 1.6rem !important;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
     margin: 0rem 1rem;
     transition:0.2s all ease;
 }

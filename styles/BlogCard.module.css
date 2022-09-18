@@ -98,3 +98,10 @@
     padding-bottom:5rem;
   }
 
+  @media only screen and (max-width: 450px) {
+   .authorname {
+    font-size:1.4rem;
+   }
+
+    
+}

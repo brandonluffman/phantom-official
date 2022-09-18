@@ -229,7 +229,7 @@ a {
  @media only screen and (max-width: 480px) {
     .landing-container {
      text-align: center!important;
-     padding: 10rem 0rem 5rem 0rem !important;
+     padding: 8rem 0rem 5rem 0rem !important;
     }
     .landing-header {
         display: none;
@@ -243,12 +243,21 @@ display: none;
        
     }
     .landing-header-mobile {
-        line-height: 9vh;
-        font-size: 8rem;
-
+        line-height: 10vh;
+        font-size: 6rem;
+        margin-bottom:6rem;
     }
 
  }
+
+ @media only screen and (max-width: 352px) {
+    .landing-container {
+     height:110vh;
+    }
+
+
+ }
+
 
 
 
@@ -387,6 +396,16 @@ display: none;
     }
  
  }
+
+ @media only screen and (max-width: 400px) {
+    .about-content-cards {
+
+        padding:0rem 1rem !important;
+        
+    }
+
+ 
+ }
  
 
 /* */
@@ -431,7 +450,6 @@ display: none;
     cursor: pointer;
     padding: 4rem;
 }
-
 
 
 
@@ -494,7 +512,12 @@ display: none;
 }
 
 
+@media only screen and (max-width: 900px) {
+    .work-container {
+        height:120vh !important;
+    }
 
+}
 
 @media only screen and (max-width: 700px) {
     .hello:hover {
@@ -508,9 +531,9 @@ display: none;
         height:140vh !important;
     }
     .hello:hover {
-        width:220px !important;
-        height:500px  !important;
+        height:450px !important;
     }
+  
     .hello-img-div{
         display: block;
         text-align: center;
@@ -532,13 +555,47 @@ display: none;
     
 }
 
+
+
 @media only screen and (max-width: 500px) {
+
     .work-container {
-        height:160vh !important;
+        height:auto !important;
+    }
+
+    .hello:hover {
+        width:250px !important;
+        height: 500px !important;
     }
 
     
 }
+
+
+@media only screen and (max-width: 400px) {
+
+
+    .hello:hover {
+        width:200px !important;
+        height: 600px !important;
+    }
+    .hello {
+        width:200px !important;
+        height:200px !important;
+
+    }
+    .hello img {
+        width:180px !important;
+        height:180px !important;
+    }
+    .hello:hover .hello-img {
+        width:100px !important;
+        height:100px !important;
+    }
+    
+}
+
+
 
 
 /* Services  */
@@ -652,6 +709,7 @@ display: none;
         text-align: center !important;
         padding: 0rem 3rem !important;
     }
+    
 
 }
 

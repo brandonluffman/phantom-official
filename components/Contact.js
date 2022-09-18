@@ -53,33 +53,6 @@ const Contact = () => {
             <button type="submit" onClick={closeBtn}>Close</button>
             </div>
       </form>
-      <div className="contact-form-banner">
-        <h3 className="contact-banner-name">Phantom SEO & Web Design</h3>
-        <div className="contact-banner-check">
-        <FontAwesomeIcon icon={faLocationDot}  className="contact-banner-icon" />
-        <div className="contact-banner-ps">
-        <p className="contact-banner-p-2">Location</p>
-        <hr className="contact-banner-line"></hr>
-        <p className="contact-banner-p">Austin, TX</p>
-        </div>
-        </div>
-        <div className="contact-banner-check">
-        <FontAwesomeIcon icon={faEnvelope}  className="contact-banner-icon"/>
-        <div className="contact-banner-ps">
-        <p className="contact-banner-p-2">Contact</p>
-        <hr className="contact-banner-line"></hr>
-        <p className="contact-banner-p">info@phantomdm.com</p>
-        </div>
-        </div>
-        <div className="contact-banner-check">
-        <FontAwesomeIcon icon={faCalendarDays}  className="contact-banner-icon"/>
-        <div className="contact-banner-ps">
-        <p className="contact-banner-p-2">Hours</p>
-        <hr className="contact-banner-line"></hr>
-        <p className="contact-banner-p">M - F  8:00 a.m. - 5:00 p.m. CST</p>
-        </div>
-        </div>
-      </div>
      
       </div>
   );
