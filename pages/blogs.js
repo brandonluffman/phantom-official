@@ -63,7 +63,7 @@ const Blogs = ({ posts }) => {
     <div className='blogs-container'>
       <h1 className='blogs-header'>Blogs</h1>
       <main className='blogs-main'>
-      {posts.reverse().map((post) => (
+      {posts.map((post) => (
         <BlogCard
           title={post.title}
           author={post.author}
