@@ -104,7 +104,7 @@ export default function Home({ posts }) {
             <h3 className="container-header about-header">About Phantom</h3>
             <div className="about-content-div">
               <div className='about-imgs-div'>
-              <img src='/img.png' className="about-img about-brand-img" alt='logo' />
+              <img src='/img.png' className="about-img about-brand-img" alt='logo' loading="lazy" />
               </div>
               <div className='about-content-text-div'>
                   <h4 className='about-content-header'>BOOST Your Business with Phantom</h4>
@@ -138,7 +138,7 @@ export default function Home({ posts }) {
             <h3 className="container-header work-header">Our Work</h3>
             <div className="hello">
               <div className='hello-img-div'>
-                <img src='/EDITION.png' className="hello-img" alt='Client Service Overview'  />
+                <img src='/EDITION.png' className="hello-img" alt='Client Service Overview' loading="lazy" />
                 <div className='hello-text-div'>
                   <h1 className="hello-name">Certi Candle Co.</h1>
                   <h6 className="hello-industry">Ecommerce</h6>

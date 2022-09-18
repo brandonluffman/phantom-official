@@ -8,7 +8,7 @@ function BlogPost({ title, author, coverPhoto, datePublished, slug, tag, descrip
     <Link href={`/posts/${slug}`}>
     <div className={styles.card}>
         <div className={styles.imgContainer}>
-          <Image fill src={coverPhoto.url} alt="" />
+          <Image fill src={coverPhoto.url} alt="Blog Card Photo" />
         </div>
       <div className={styles.text}>
         <button className={styles.tag}>{tag.tagDrop}</button>
@@ -16,7 +16,7 @@ function BlogPost({ title, author, coverPhoto, datePublished, slug, tag, descrip
         <p className={styles.description}>{description}</p>
         <div className={styles.details}>
           <div className={styles.author}>
-            <img width='100' height='100' src={author.avatar.url} alt={title.name} />
+            <img className={styles.authorimg} src={author.avatar.url} alt={title.name} loading="lazy" />
             <h3 className={styles.authorname}>{author.name}</h3>
           </div>
           <div className={styles.date}>

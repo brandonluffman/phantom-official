@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="row footer-contact-row">
           <div className="col footer-contact-col">
               <div className='footer-brand-img'>
-                <img src='/img.png' alt="Logo" width='150px' height='150px' />
+                <img src='/img.png' alt="Logo" className='footer-brand-logo' loading="lazy" />
               </div>
               <div className='social-icons'>
                 <a href='https://twitter.com/PhantomDigi' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-twitter social-icon" icon={faTwitter}></FontAwesomeIcon></a>
