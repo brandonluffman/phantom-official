@@ -103,7 +103,7 @@ export default function BlogPost({ post }) {
       <div className={styles.waterfall}>
         <p className={styles.waterfallp}><Link href='/blogs'><span className={styles.bloglink}>Blog </span></Link>/ {post.title}</p>
       </div>
-      <h2 className={styles.title}>{post.title}</h2>
+      <h1 className={styles.title}>{post.title}</h1>
       <div className={styles.authdetails}>
           <img src={post.author.avatar.url} alt={post.author.name} />
           <div className={styles.authtext}>

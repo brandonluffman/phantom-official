@@ -53,13 +53,12 @@ function IndexPage() {
 
 
       <Head>
-          <title>Phantom SEO | ROI Focused SEO & Web Development Firm</title>
+          <title>Phantom Technologies | Professional Website Developers</title>
           <meta charset="utf-8" />
-          <meta name="description" content="Join Phantom and drive your business past it's competitors with our clever website design, unrivaled SEO performance and extensive media campaigns." />
           <meta property="og:type" content="website" />
-          <meta name="og:title" property="og:title" content="Phantom SEO & Web Design" />
-          <meta name="og:description" property="og:description" content="Join Phantom and drive your business past it's competitors with our clever website design, unrivaled SEO performance and extensive media campaigns." />
-          <meta property="og:site_name" content="" />
+          <meta name="og:title" property="og:title" content="Phantom Technologies" />
+          <meta name="og:description" property="og:description" content="Join Phantom and ignite your visibility with a professionally designed website." />
+          <meta property="og:site_name" content="Phantom Technologies" />
           <meta property="og:url" content="https://phantomdm.com/" />  
           <meta name="twitter:card" content="summary" /> 
           <meta name="twitter:title" content="" />

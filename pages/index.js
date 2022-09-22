@@ -78,26 +78,14 @@ export default function Home({ posts }) {
 
         <div className="container-fluid landing-container" id="home">
           <div className="row landing-row">
-            <h3 className="landing-subheader">
-              Phantom SEO &amp; Web Design
-            </h3>
-            <h3 className="landing-subheader-mobile">
-            Websites That Convert
-            </h3>
-            
+            <h3 className="landing-subheader">Phantom Technologies</h3>
             <h1 className="landing-header">Websites That Convert</h1>
-            <h1 className="landing-header-mobile">
-            Phantom SEO &amp; Web Design</h1>
-
             <div className="landing-btns">
               <a href='#contact' ><button className="landing-btn launch-btn">Launch Your Business</button></a>
               <a href='#about' ><button className="landing-btn learn-btn">Learn More</button></a>
             </div>
           </div>
         </div>
-
-
-
 
         <div className="container-fluid about-container" id="about">
           <div className="row about-row">
@@ -108,23 +96,23 @@ export default function Home({ posts }) {
               </div>
               <div className='about-content-text-div'>
                   <h4 className='about-content-header'>BOOST Your Business with Phantom</h4>
-                  <p className='about-content-p'>Phantom is a Professional SEO Optimization and Web Development firm dedicated to boosting lead generation for businesses.</p>
+                  <p className='about-content-p'>Phantom is a Professional Web Development firm dedicated to providing quality websites to clients that maximize visibility.</p>
                   <hr className='about-content-line'></hr>
                   <div className='about-content-cards'>
                     <div className='about-content-card'>
                       <FontAwesomeIcon className="fa-solid fa-check-circle about-content-card-icon rocket-icon" icon={faRocket} />
                       <h6 className='about-content-card-header'>Boost Leads</h6>
-                      <p className='about-content-card-p'>Draw higher quality and quantity of leads with the expertise of our SEO specialists.</p>
+                      <p className='about-content-card-p'>Draw higher quality and quantity of leads.</p>
                     </div>
                     <div className='about-content-card'>
                     <FontAwesomeIcon className="fa-solid fa-check-circle about-content-card-icon" icon={faCheckCircle} />
                       <h6 className='about-content-card-header'>Increase Traffic</h6>
-                      <p className='about-content-card-p'>Amplify your current audience and hack your current traffic metrics with our expert Development team.</p>
+                      <p className='about-content-card-p'>Amplify your current audience and hack your current traffic metrics.</p>
                     </div>
                     <div className='about-content-card'>
                       <FontAwesomeIcon className="fa-solid fa-check-circle about-content-card-icon" icon={faHandshake} />
                       <h6 className='about-content-card-header'>Build Trust</h6>
-                      <p className='about-content-card-p'>Increase brand credibility while maintaining a presence in the top positions of search rankings with a professionally developed website.</p>
+                      <p className='about-content-card-p'>Increase brand credibility while maintaining a presence in the top positions of search rankings.</p>
                     </div>
                   </div>
               </div>
@@ -132,46 +120,82 @@ export default function Home({ posts }) {
           </div>
         </div>
 
-{/*
-        <div className="container-fluid work-container" id="work">
-          <div className="row work-row">
-            <h3 className="container-header work-header">Our Work</h3>
-            <div className="hello">
-              <div className='hello-img-div'>
-                <img src='/EDITION.png' className="hello-img" alt='Client Service Overview' loading="lazy" />
-                <div className='hello-text-div'>
-                  <h4 className="hello-name">Certi Candle Co.</h4>
-                  <h6 className="hello-industry">Ecommerce</h6>
-                </div>
-              </div>
-              <p className="hello-p">
-                Certi Candle Co. is a new luxury candle company based out of New York City. Our development team crafted a sophisticated yet simple aesthetic to their website, akin to their brand design. With the help of our SEO specialists, the company has boosted traffic and their keywords remain dominant in the search rankings.
-              </p>
-              <div className="hello-link-div">
-              <a href='https://certicandles.com' target="_blank" rel="noreferrer" className='hello-link'><FontAwesomeIcon className="fa-solid fa-arrow-right-from-square website-icon" icon={faArrowUpRightFromSquare} /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-  */}
 
         <div className="container-fluid services-container" id="services">
           <div className="row">
             <h3 className="container-header testimonials-header" >Services</h3>
-                  <div className='service-cards'>
-                    <div className='service-card service-card-1' id='seo'>
-                      <FontAwesomeIcon className='service-icon' icon={faMagnifyingGlassChart} />
-                      <h5 className='service-name'>SEO</h5>
-                      <p className='service-description'>Dominate the competition in search pages with our SEO campaigns. Our SEO campaigns are centered around exploiting the best tools, resources, and strategies in the industry to increase a websites visibility and traffic.</p>
-                    </div>
-                    <div className='service-card service-card-2' id='webdev'>
-                    <FontAwesomeIcon className='service-icon code-icon' icon={faCode} />
-                      <h5 className='service-name'>Website Development</h5>
-                      <p className='service-description'>First impressions are crucial. Having a professionally developed website will increase the traffic to a website while building trust with your audience. Leave a lasting impression on potential leads with a professional website that stands out from the competition.</p>
-                    </div>
-                    </div>
+            <div className='services-div'>
+              <div className='services-description'>
+                <div className='service-desc-item'>
+                  <h2 className='service-desc-header'>Business Websites</h2>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Passive Lead Generation with Clear Call to Action</p>
+                  </div>
+                  <div className='desc-group'>
+                    <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>User & Mobile Friendly Design Functionality</p>
+                  </div>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Full SEO Keyword Optimization</p>
+                  </div>
+                </div>
+                <div className='service-desc-item'>
+                  <h2 className='service-desc-header'>Ecommerce Websites</h2>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Secure Checkout Integration with Stripe</p>
+                  </div>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Seamless CMS System for Updating Product Data</p>
+                  </div>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Full SEO Keyword Optimization</p>
+                  </div>
+                </div>
+                <div className='service-desc-item'>
+                  <h2 className='service-desc-header'>Blogs</h2>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Tight Integration Of Relevant Social Media Channels</p>
+                  </div>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Seamless CMS System for Adding, Editing, and Deleting Blogs.</p>
+                  </div>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Full SEO Keyword Optimization</p>
+                  </div>
+                </div>
+                <div className='service-desc-item'>
+                  <h2 className='service-desc-header'>Web Applications</h2>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Full-Stack Modern Web Application with Mobile First Interface</p>
+                  </div>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Secure, Flexible, and Scalable That Meets Demand</p>
+                  </div>
+                  <div className='desc-group'>
+                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
+                    <p className='item-p'>Full SEO Keyword Optimization</p>
+                  </div>
+                </div>
+              </div>
+              <div className='web-imgs-div'>
+                  <div className='website-img web-img-1'></div>
+                  <div className='website-img web-img-2'></div>
+              </div>
             </div>
           </div>
+        </div>
+
+
         <div className="container-fluid blog-container" id="blog">
           <div className="row blog-row">
             <h3 className="container-header testimonials-header">Blog</h3>
@@ -195,6 +219,7 @@ export default function Home({ posts }) {
             <Link href='/blogs'><button className='blog-link'>See All</button></Link>
           </div>
         </div>
+
         <div className="container-fluid contact-container" id="contact">
           <h3 className="container-header contact-header">Get In Touch</h3>
           <Contact />
