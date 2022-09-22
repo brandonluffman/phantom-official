@@ -426,6 +426,7 @@ a {
         height:58rem;
         width:35rem !important;
         background-size:100%;
+        margin-top:10rem !important;
 }
   
 .services-div {
@@ -513,9 +514,6 @@ a {
             padding:0rem 2rem !important;
         }
 
-        .web-img-2 {
-            margin-top:10rem !important;
-        }
     }
         @media only screen and (max-width: 700px) {
             .services-description {
