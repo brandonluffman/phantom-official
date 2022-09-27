@@ -461,6 +461,7 @@ a {
 .desc-icon {
     margin-right:2rem;
     font-size:2rem;
+    color:#B9D9EB;
 }
 
 .service-desc-header {
@@ -479,7 +480,7 @@ a {
 }
 
 .services-container {
-    height:auto;
+    height:auto !important;
 }
 
 .services-description {
