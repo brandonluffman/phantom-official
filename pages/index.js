@@ -195,7 +195,7 @@ export default function Home({ posts }) {
           </div>
         </div>
 
-
+{/*
         <div className="container-fluid blog-container" id="blog">
           <div className="row blog-row">
             <h3 className="container-header testimonials-header">Blog</h3>
@@ -219,7 +219,7 @@ export default function Home({ posts }) {
             <Link href='/blogs'><button className='blog-link'>See All</button></Link>
           </div>
         </div>
-
+            */}
         <div className="container-fluid contact-container" id="contact">
           <h3 className="container-header contact-header">Get In Touch</h3>
           <Contact />

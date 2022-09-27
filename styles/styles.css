@@ -232,6 +232,9 @@ a {
     .landing-header {
         font-size: 8rem;
     }
+    .landing-btn {
+        font-size: 2rem;
+    }
  }
 
  @media only screen and (max-width: 400px) {
@@ -401,6 +404,10 @@ a {
 
 /* Services */
 
+.services-container {
+    height:auto;
+}
+
 .website-img {
     transform: perspective(1500px) rotateY(15deg);
     border-radius: 1rem;
@@ -433,6 +440,7 @@ a {
     display: flex;
     padding:0rem 4rem !important;
     width:100%;
+    margin-bottom:6rem;
 }
 
 .web-imgs-div {
@@ -468,6 +476,10 @@ a {
 .item-p {
     font-size:1.5rem;
     font-weight:400;
+}
+
+.services-container {
+    height:auto;
 }
 
 .services-description {
@@ -544,8 +556,8 @@ a {
     }
 
     .desc-group {
-        text-align: center;
-        justify-content: center;
+        text-align: left;
+        justify-content: left;
     }
 
 
