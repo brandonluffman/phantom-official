@@ -89,7 +89,7 @@ export default function Home({ posts }) {
 
         <div className="container-fluid about-container" id="about">
           <div className="row about-row">
-            <h3 className="container-header about-header">About Phantom</h3>
+            <h3 className="container-header about-header">About Us</h3>
             <div className="about-content-div">
               <div className='about-imgs-div'>
               <img src='/img.png' className="about-img about-brand-img" alt='logo' loading="lazy" />

@@ -62,9 +62,11 @@ const Blogs = ({ posts }) => {
     <>
     <IndexPage />
       <Nav />
+
     <div className='blogs-container'>
       <h3 className='blogs-header'>Blogs</h3>
-      <main className='blogs-main'>
+      <h5 className='blog-upcoming'>Blog Coming Soon!</h5>
+      <main className='blogs-main'> 
       {posts.map((post) => (
         <BlogCard
           title={post.title}
