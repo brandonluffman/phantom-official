@@ -208,7 +208,7 @@ a {
 
  @media only screen and (max-width: 616px) {
     .landing-header {
-    line-height:10vh;
+    line-height:11vh;
     margin-bottom:10rem;
     }
  
@@ -399,8 +399,23 @@ a {
 }
 
 
+#thank_you {
+    font-size:1.3rem;
+    margin-top: 3rem;
+}
 
-
+#thank_you button {
+    padding:0.6rem 1rem;
+    border-radius:20px;
+    background:white;
+    color:rgb(107, 107, 147);
+    border:none;
+    box-shadow: 1px 2px 4px rgb(40,40,40);
+    transition:0.3s all ease;
+}
+#thank_you button:hover {
+    transform: translateY(-3px);
+}
 
 /* Services */
 
