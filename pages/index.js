@@ -136,10 +136,6 @@ export default function Home({ posts }) {
                     <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
                     <p className='item-p'>User & Mobile Friendly Design Functionality</p>
                   </div>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Full SEO Keyword Optimization</p>
-                  </div>
                 </div>
                 <div className='service-desc-item'>
                   <h2 className='service-desc-header'>Ecommerce Websites</h2>
@@ -150,10 +146,6 @@ export default function Home({ posts }) {
                   <div className='desc-group'>
                   <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
                     <p className='item-p'>Seamless CMS System for Updating Product Data</p>
-                  </div>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Full SEO Keyword Optimization</p>
                   </div>
                 </div>
                 <div className='service-desc-item'>
@@ -166,10 +158,6 @@ export default function Home({ posts }) {
                   <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
                     <p className='item-p'>Seamless CMS System for Adding, Editing, and Deleting Blogs.</p>
                   </div>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Full SEO Keyword Optimization</p>
-                  </div>
                 </div>
                 <div className='service-desc-item'>
                   <h2 className='service-desc-header'>Web Applications</h2>
@@ -179,11 +167,7 @@ export default function Home({ posts }) {
                   </div>
                   <div className='desc-group'>
                   <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Secure, Flexible, and Scalable That Meets Demand</p>
-                  </div>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Full SEO Keyword Optimization</p>
+                    <p className='item-p'>Secure, Flexible, and Scalable Application That Meets Customer Demand</p>
                   </div>
                 </div>
               </div>
