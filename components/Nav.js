@@ -45,11 +45,11 @@ function Nav() {
 
     <header className="header">
       <nav className="navbar fixed-top" id="navbar">
-        <a href="/" className="nav-logo">
+        <Link href="/" className="nav-logo">
           <div className="brand-img" id="brand-img">
             <img src='/img.png' alt="Logo" id='nav-brand-img' loading="lazy" />
           </div>
-        </a>
+        </Link>
         <div className="" onClick={toggleNav}>
           <FontAwesomeIcon icon={faBars} className='hamburger-btn' />
         </div>
