@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import IndexPage from '../components/IndexPage';
 
 
 const graphcms = new GraphQLClient(
@@ -59,6 +60,7 @@ const Blogs = ({ posts }) => {
     
   return (
     <>
+    <IndexPage />
       <Nav />
     <div className='blogs-container'>
       <h3 className='blogs-header'>Blogs</h3>
