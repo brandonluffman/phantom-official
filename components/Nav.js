@@ -45,7 +45,7 @@ function Nav() {
 
     <header className="header">
       <nav className="navbar fixed-top" id="navbar">
-        <a href="home" className="nav-logo">
+        <a href="/" className="nav-logo">
           <div className="brand-img" id="brand-img">
             <img src='/img.png' alt="Logo" id='nav-brand-img' loading="lazy" />
           </div>
