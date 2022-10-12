@@ -493,7 +493,7 @@ a {
     margin-bottom:2rem;
     font-size:3rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .services-description {
@@ -535,38 +535,28 @@ a {
             margin-left: 0%;
             grid-column-gap:10px !important;
     }
-
     .service-desc-item {
         width:100%;
         margin-left:0%;
 }
-   
 }
 
 @media only screen and (max-width: 600px) {
-
     .services-description {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             width:100%; 
             margin-left: 0%;      
     }
-
     .web-img-1, .web-img-2 {
         height:40rem;
-    }
-
-   
+    }   
 }
 
 @media only screen and (max-width: 375px) {
-
-
     .web-img-1, .web-img-2 {
         height:35rem;
     }
-
-   
 }
 
 
