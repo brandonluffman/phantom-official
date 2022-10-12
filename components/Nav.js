@@ -68,6 +68,7 @@ function Nav() {
             </a>
             </Link>
           </li>
+          {/*
           <li className="nav-item">
                   <UncontrolledDropdown className='dropdown-div'>
                     <DropdownToggle className='dropdown'>
@@ -84,6 +85,14 @@ function Nav() {
                       </Link>
                     </DropdownMenu>
             </UncontrolledDropdown>
+          </li>
+            */}
+          <li className="nav-item">
+            <Link href='/#services'>
+            <a href='' className="nav-link">
+              Services
+            </a>
+            </Link>
           </li>
           <li className="nav-item">
           <Link href='/blogs'>
