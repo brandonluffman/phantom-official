@@ -15,13 +15,13 @@ const Footer = () => {
                 <img src='/img.png' alt="Logo" className='footer-brand-logo' loading="lazy" />
               </div>
               <div className='social-icons'>
-                <a href='https://twitter.com/PhantomDigi' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-twitter social-icon" icon={faTwitter}></FontAwesomeIcon></a>
+                <a href='https://twitter.com/PhxntomTech' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-twitter social-icon" icon={faTwitter}></FontAwesomeIcon></a>
     
-                <a href='https://www.facebook.com/100084723462596/' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-facebook social-icon" icon={faFacebookF}><a href='https://www.linkedin.com/company/phantom-seo-web-design/'></a></FontAwesomeIcon></a>
+                <a href='https://www.facebook.com/profile.php?id=100084723462596' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-facebook social-icon" icon={faFacebookF}><a href='https://www.linkedin.com/company/phantom-seo-web-design/'></a></FontAwesomeIcon></a>
 
-                <a href='https://www.instagram.com/phantomseo/' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-instagram social-icon" icon={faInstagram}><a href='https://www.linkedin.com/company/phantom-seo-web-design/'></a></FontAwesomeIcon></a>
+                <a href='https://www.instagram.com/phxntomtechnologies/' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-instagram social-icon" icon={faInstagram}><a href='https://www.linkedin.com/company/phantom-seo-web-design/'></a></FontAwesomeIcon></a>
 
-                <a href='https://www.linkedin.com/company/phantom-seo-web-design/' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-linkedin social-icon" icon={faLinkedinIn}><a href='https://www.linkedin.com/company/phantom-seo-web-design/'></a></FontAwesomeIcon></a>
+                <a href='https://www.linkedin.com/company/phxntomtech' target='_blank' rel='noreferrer'><FontAwesomeIcon className="fa-brands fa-linkedin social-icon" icon={faLinkedinIn}><a href='https://www.linkedin.com/company/phantom-seo-web-design/'></a></FontAwesomeIcon></a>
               </div>
           </div>
           <div className="col footer-newsletter-col">
