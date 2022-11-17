@@ -53,7 +53,7 @@ function IndexPage() {
 
 
       <Head>
-          <title>Phantom Technologies | Professional Website Developers</title>
+          <title>Phantom Technologies | Professional Business Technology Solutions</title>
           <meta charset="utf-8" />
           <meta property="og:type" content="website" />
           <meta name="og:title" property="og:title" content="Phantom Technologies" />
