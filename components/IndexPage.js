@@ -57,7 +57,7 @@ function IndexPage() {
           <meta charset="utf-8" />
           <meta property="og:type" content="website" />
           <meta name="og:title" property="og:title" content="Phantom Technologies" />
-          <meta name="og:description" property="og:description" content="Join Phantom and ignite your visibility with a professionally designed website." />
+          <meta name="og:description" property="og:description" content="Professionally Developed Business Websites and Software Dedicated to Boosting Revenue" />
           <meta property="og:site_name" content="Phantom Technologies" />
           <meta property="og:url" content="https://phantomdm.com/" />  
           <meta name="twitter:card" content="summary" /> 
