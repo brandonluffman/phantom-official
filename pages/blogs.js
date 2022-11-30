@@ -66,7 +66,7 @@ const Blogs = ({ posts }) => {
     <div className='blogs-container'>
       <h3 className='blogs-header'>Blogs</h3>
       <h5 className='blog-upcoming'>Blog Coming Soon!</h5>
-      <main className='blogs-main'> 
+      {/* <main className='blogs-main'> 
       {posts.map((post) => (
         <BlogCard
           title={post.title}
@@ -80,7 +80,7 @@ const Blogs = ({ posts }) => {
           className='blogs-blog-card'
         />
       ))}
-    </main>
+    </main> */}
     </div>
 
     <Footer />
