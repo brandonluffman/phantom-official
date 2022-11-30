@@ -46,9 +46,6 @@ function IndexPage() {
            fbq('track', 'PageView');
         `}
       </Script>
-    <noscript><img height="1" width="1" alt='facebook-pixel' style={{display: "none" }}
-    src="https://www.facebook.com/tr?id=416358717076654&ev=PageView&noscript=1"
-    /></noscript>
 
 
 
