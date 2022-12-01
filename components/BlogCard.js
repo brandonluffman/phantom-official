@@ -6,7 +6,7 @@ import Image from 'next/future/image';
 function BlogPost({ title, author, coverPhoto, datePublished, slug, tag, description }) {
   return (
     <div>
-    {/* <Link href={`/posts/${slug}`}>
+    <Link href={`/posts/${slug}`}>
     <div className={styles.card}>
         <div className={styles.imgContainer}>
           <Image fill src={coverPhoto.url} alt="Blog Card Photo" />
@@ -26,7 +26,7 @@ function BlogPost({ title, author, coverPhoto, datePublished, slug, tag, descrip
         </div>
       </div>
     </div>
-    </Link> */}
+    </Link>
     </div>
   );
 }
