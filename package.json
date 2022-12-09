@@ -32,6 +32,7 @@
     "next-share": "^0.18.1",
     "next-sitemap": "^3.1.22",
     "nodemailer": "^6.7.8",
+    "npm": "^9.2.0",
     "popper.js": "^1.16.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",

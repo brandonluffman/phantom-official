@@ -114,7 +114,7 @@ const ProjectInquiry = () => {
         <div className='form-button'>
                 <button className='project-form-btn' type='submit'>Send Request</button>
         </div>
-        <div id="thank_you" style={{display: 'none'}}>
+        <div id="thank_you" className='thankyou-div' style={{display: 'none'}}>
             <p>Thanks for filling up the form!</p>
             <button type="submit" onClick={closeBtn}>Close</button>
         </div>
