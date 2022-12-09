@@ -1,43 +1,45 @@
 import React, { useState, useRef } from 'react'
 import styled from "styled-components";
 import { BsPaperclip } from 'react-icons/bs';
+import emailjs from "@emailjs/browser";
+
 
 const ProjectInquiry = () => {
-    // const inquiry = useRef();
+    const inquiry = useRef();
 
-    // const closeBtn = (e) => {
-    //   e.preventDefault();
-    //   document.getElementById('thank_you').style.display = 'none';
-    // }
+    const closeBtn = (e) => {
+      e.preventDefault();
+      document.getElementById('thank_you').style.display = 'none';
+    }
   
-    // const sendEmail = (e) => {
-    //   e.preventDefault();
+    const sendEmail = (e) => {
+      e.preventDefault();
   
-    //   emailjs
-    //     .sendForm(
-    //       "service_d3p9eul",
-    //       "template_yrm1kdx",
-    //       form.current,
-    //       "q1bvSeQBMko2AZ2ax"
-    //     )
-    //     .then(
-    //       (result) => {
-    //         console.log(result.text);
-    //         console.log("message sent");
-    //         e.target.reset();
-    //         document.getElementById('thank_you').style.display = 'block';
+      emailjs
+        .sendForm(
+          "service_d3p9eul",
+          "template_yrm1kdx",
+          inquiry.current,
+          "q1bvSeQBMko2AZ2ax"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("message sent");
+            e.target.reset();
+            document.getElementById('thank_you').style.display = 'block';
   
-    //       },
-    //       (error) => {
-    //         console.log(error.text);
-    //       }
-    //     );
-    // };
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    };
 
   return (
     <div>
-        <h1>Hello Testing</h1>
-    {/* <div className='project-contact-container'>
+     
+    <div className='project-contact-container'>
     <form ref={inquiry} onSubmit={sendEmail} className='project-form'>
         <h6 className='project-header'>Hey, let's get to work. <span className='hand-emoji'>&#128075;</span></h6>
         <p className='project-subheader'>I'm interested in...</p>
@@ -117,7 +119,7 @@ const ProjectInquiry = () => {
             <button type="submit" onClick={closeBtn}>Close</button>
         </div>
         </form>
-        </div> */}
+        </div>
     </div>
   )
 }
