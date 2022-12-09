@@ -15,6 +15,11 @@ import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import IndexPage from '../components/IndexPage';
 import NewsletterSubscribe from '../components/NewsletterSubscribe';
+import {BsTools,BsFillAwardFill, BsAward, BsCursorFill} from 'react-icons/bs';
+import { GrDeploy } from 'react-icons/gr';
+import { MdDeveloperMode, MdOutlineSpeed, MdAnalytics, MdDraw } from 'react-icons/md';
+import { SiMicrostrategy, SiAltiumdesigner } from 'react-icons/si';
+
 
 
 const graphcms = new GraphQLClient(
@@ -75,14 +80,13 @@ export default function Home({ posts }) {
     <>
     <IndexPage />
       <Nav />
-
         <div className="container-fluid landing-container" id="home">
           <div className="row landing-row">
             <h3 className="landing-subheader">Phantom Technologies</h3>
             <h1 className="landing-header">Websites That Convert</h1>
             <div className="landing-btns">
-              <a href='#contact' ><button className="landing-btn launch-btn">Launch Your Business</button></a>
-              <a href='#about' ><button className="landing-btn learn-btn">Learn More</button></a>
+              <Link href='/project'><button className="landing-btn launch-btn">Start a Project</button></Link>
+              <a href='#about'><button className="landing-btn learn-btn">About Us</button></a>
             </div>
           </div>
         </div>
@@ -95,26 +99,13 @@ export default function Home({ posts }) {
               <img src='/img.png' className="about-img about-brand-img" alt='logo' loading="lazy" />
               </div>
               <div className='about-content-text-div'>
-                  <h4 className='about-content-header'>BOOST Your Business with Phantom</h4>
-                  <p className='about-content-p'>Phantom is a Professional Web Development firm dedicated to providing quality websites to clients that maximize visibility.</p>
+                  <h4 className='about-content-header'>ELEVATE Your Business with Phantom</h4>
+                  <p className='about-content-p'>Leading Web Development firm with professional design and development experience. We build sophisticated websites and full-stack web applications.</p>
                   <hr className='about-content-line'></hr>
-                  <div className='about-content-cards'>
-                    <div className='about-content-card'>
-                      <FontAwesomeIcon className="fa-solid fa-check-circle about-content-card-icon rocket-icon" icon={faRocket} />
-                      <h6 className='about-content-card-header'>Boost Leads</h6>
-                      <p className='about-content-card-p'>Draw higher quality and quantity of leads.</p>
-                    </div>
-                    <div className='about-content-card'>
-                    <FontAwesomeIcon className="fa-solid fa-check-circle about-content-card-icon" icon={faCheckCircle} />
-                      <h6 className='about-content-card-header'>Increase Traffic</h6>
-                      <p className='about-content-card-p'>Amplify your current audience and hack your current traffic metrics.</p>
-                    </div>
-                    <div className='about-content-card'>
-                      <FontAwesomeIcon className="fa-solid fa-check-circle about-content-card-icon" icon={faHandshake} />
-                      <h6 className='about-content-card-header'>Build Trust</h6>
-                      <p className='about-content-card-p'>Increase brand credibility while maintaining a presence in the top positions of search rankings.</p>
-                    </div>
-                  </div>
+                   <div className='web-imgs-div'>
+                  <div className='website-img web-img-1'></div>
+                  <div className='website-img web-img-2'></div>
+              </div>
               </div>
             </div>
           </div>
@@ -123,57 +114,102 @@ export default function Home({ posts }) {
 
         <div className="container-fluid services-container" id="services">
           <div className="row">
-            <h3 className="container-header testimonials-header" >Services</h3>
+            <h3 className="container-header testimonials-header">Services</h3>
             <div className='services-div'>
-              <div className='services-description'>
-                <div className='service-desc-item'>
-                  <h2 className='service-desc-header'>Business Websites</h2>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Passive Lead Generation with Clear Call to Action</p>
-                  </div>
-                  <div className='desc-group'>
-                    <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>User & Mobile Friendly Design Functionality</p>
-                  </div>
+              <div className='business-website-div service-div'>
+                <div className='service-img-div img-div-1'>
+                <img src='../landing.png' className='service-img service-img-1'></img>
                 </div>
-                <div className='service-desc-item'>
-                  <h2 className='service-desc-header'>Ecommerce Websites</h2>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Secure Checkout Integration with Stripe</p>
-                  </div>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Seamless CMS System for Updating Product Data</p>
-                  </div>
+                <div className='service-content'>
+                <p className='service-subheader'>Service</p>
+                <hr className='service-hr'></hr>
+                <h2 className='service-header'>Business Websites</h2>
+                <p className='service-description'>User-centered design that boosts lead generation and increases revenue.</p>
+                <div className='service-btn-div'>
+                <Link href='/project'><button type='button' className='service-btn service-project-btn'>Start a Project</button></Link>
+                <Link href='/project'><button type='button' className='service-btn service-learn-btn'>Learn More</button></Link>
                 </div>
-                <div className='service-desc-item'>
-                  <h2 className='service-desc-header'>Blogs</h2>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Tight Integration Of Relevant Social Media Channels</p>
-                  </div>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Seamless CMS System for Adding, Editing, and Deleting Blogs.</p>
-                  </div>
-                </div>
-                <div className='service-desc-item'>
-                  <h2 className='service-desc-header'>Web Applications</h2>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Full-Stack Modern Web Application with Mobile First Interface</p>
-                  </div>
-                  <div className='desc-group'>
-                  <FontAwesomeIcon className='desc-icon' icon={faCheckCircle} />
-                    <p className='item-p'>Secure, Flexible, and Scalable Application That Meets Customer Demand</p>
-                  </div>
                 </div>
               </div>
-              <div className='web-imgs-div'>
-                  <div className='website-img web-img-1'></div>
-                  <div className='website-img web-img-2'></div>
+              <div className='ecommerce-website-div service-div mobile-flip'>
+                <div className='service-content service-content-flipped'>
+                <p className='service-subheader'>Service</p>
+                <hr className='service-hr'></hr>
+                <h2 className='service-header'>Ecommerce Websites</h2>
+                <p className='service-description'>Our Ecommerce specialists design and build high converting websites included with all modern Ecommerce features.</p>
+                <div className='service-btn-div'>
+                <Link href='/project'><button type='button' className='service-btn service-project-btn'>Start a Project</button></Link>
+                <Link href='/project'><button type='button' className='service-btn service-learn-btn'>Learn More</button></Link>
+                </div>
+                </div>
+                <div className='service-img-div img-div-2'>
+                <img src='../ecommerce.jpeg' className='service-img service-img-2'></img>
+                </div>
+              </div> 
+              <div className='ecommerce-website-div service-div'>
+              <div className='service-img-div img-div-3'>
+                <img src='../custom-web.jpeg' className='service-img service-img-3'></img>
+                </div>
+                <div className='service-content service-content'>
+                <p className='service-subheader'>Service</p>
+                <hr className='service-hr'></hr>
+                <h2 className='service-header'>Custom Websites</h2>
+                <p className='service-description'>Have a design in mind? Our developers will work effortlessly to provide you with a website fit to your specifications.</p>
+                <div className='service-btn-div'>
+                <Link href='/project'><button type='button' className='service-btn service-project-btn'>Start a Project</button></Link>
+                <Link href='/project'><button type='button' className='service-btn service-learn-btn'>Learn More</button></Link>
+                </div>
+                </div>
+              </div> 
+              <div className='web-apps-div service-div mobile-flip'>
+                <div className='service-content-flipped'>
+                <p className='service-subheader'>Service</p>
+                <hr className='service-hr'></hr>
+                <h2 className='service-header'>Web Applications</h2>
+                <p className='service-description'>Our Web App Development team builds full-stack web and front-end applications using modern tech stacks for innovative tech brands and companies.</p>
+                <div className='service-btn-div'>
+                <Link href='/project'><button type='button' className='service-btn service-project-btn'>Start a Project</button></Link>
+                <Link href='/project'><button type='button' className='service-btn service-learn-btn'>Learn More</button></Link>
+                </div>
+                </div>
+                <div className='service-img-div img-div-4'>
+                <img src='../web-app.jpeg' className='service-img service-img-4'></img>
+                </div>
+              </div>
+            </div>
+            <div className='service-attributes'>
+              <h6 className='serv-attributes-header'>Our Development Process</h6>
+              <div className='development-phases'>
+                <div className='dev-phase'>
+                <p className='phase-header'>Phase 1</p>
+                <p className='dev-phase-name'>Research & Analysis</p>
+                <MdAnalytics className='phase-icon' />
+                </div>
+                <div className='dev-phase'>
+                <p className='phase-header'>Phase 2</p>
+                <p className='dev-phase-name'>Planning & Strategy</p>
+                <SiMicrostrategy className='phase-icon' />
+                </div>
+                <div className='dev-phase'>
+                <p className='phase-header'>Phase 3</p>
+                <p className='dev-phase-name'>Design</p>
+                <MdDraw className='phase-icon' />
+                </div>
+                <div className='dev-phase'>
+                <p className='phase-header'>Phase 4</p>
+                <p className='dev-phase-name'>Development</p>
+                <MdDeveloperMode className='phase-icon' />
+                </div>
+                <div className='dev-phase'>
+                <p className='phase-header'>Phase 5</p>
+                <p className='dev-phase-name'>Testing</p>
+                <MdOutlineSpeed className='phase-icon' />
+                </div>
+                <div className='dev-phase'>
+                <p className='phase-header'>Phase 6</p>
+                <p className='dev-phase-name'>Deployment</p>
+                <GrDeploy className='phase-icon' />
+                </div>
               </div>
             </div>
           </div>
@@ -203,7 +239,8 @@ export default function Home({ posts }) {
             <Link href='/blogs'><button className='blog-link'>See All</button></Link>
           </div>
         </div>
-            */}
+*/}
+
         <div className="container-fluid contact-container" id="contact">
           <h3 className="container-header contact-header">Get In Touch</h3>
           <Contact />

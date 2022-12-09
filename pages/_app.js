@@ -9,6 +9,7 @@ import '../styles/footer.css';
 import '../styles/subscribe.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import '../styles/project.css';
 config.autoAddCss = false
 
 

@@ -3,72 +3,21 @@ import Script from 'next/script';
 
 function IndexPage() {
   return (
-    <div>
-     <Script
-    type="application/ld+json"
-    id="my-script"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(
-      {
-        "@context" : "http://schema.org",
-        "@type" : "LocalBusiness",
-        "name" : "Phantom SEO & Web Design",
-        "url" : "https://phantomdm.com/",
-      }
-      ) }}
-  />
-
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-216078895-1"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-216078895-1');
-        `}
-      </Script>
-
-
-      <Script id="facebook-pixel" strategy="afterInteractive">
-        {`
-           !function(f,b,e,v,n,t,s)
-           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-           if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-           n.queue=[];t=b.createElement(e);t.async=!0;
-           t.src=v;s=b.getElementsByTagName(e)[0];
-           s.parentNode.insertBefore(t,s)}(window, document,'script',
-           'https://connect.facebook.net/en_US/fbevents.js');
-           fbq('init', '416358717076654');
-           fbq('track', 'PageView');
-        `}
-      </Script>
-
-
-
       <Head>
-          <title>Phantom Technologies | Professional Business Technology Solutions</title>
+          <title>Phantom Technologies | Professional Website Development</title>
           <meta charset="utf-8" />
           <meta property="og:type" content="website" />
           <meta name="og:title" property="og:title" content="Phantom Technologies" />
-          <meta name="og:description" property="og:description" content="Professionally Developed Business Websites and Software Dedicated to Boosting Revenue" />
+          <meta name="og:description" property="og:description" content="" />
           <meta property="og:site_name" content="Phantom Technologies" />
           <meta property="og:url" content="https://phantomdm.com/" />  
-          <meta name="twitter:card" content="summary" /> 
-          <meta name="twitter:title" content="" />
-          <meta name="twitter:description" content='' />
-          <meta name="twitter:site" content="" />
-          <meta name="twitter:creator" content="" />
+          <meta name="robots" content="index, follow" />
           <link rel="icon" type="image/png" href="/img.png" />
           <link rel="apple-touch-icon" href="/static/images/favicon.ico" />
           <meta property="og:image" content="" />  
           <meta name="twitter:image" content="" />   
           <link rel="canonical" href="https://phantomdm.com/"/>
       </Head>
-    </div>
   ) 
 }
 

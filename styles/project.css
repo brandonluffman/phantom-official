@@ -1,0 +1,136 @@
+.project-contact-container {
+    padding-top:17rem;
+    color:rgb(40,40,40);
+    background: #f3f3f3;
+    border-bottom: 1px solid rgb(250, 250, 250);
+    font-family: 'Montserrat', sans-serif !important;
+    overflow: hidden;
+    font-weight:400;
+    letter-spacing:-.04vw;
+}
+.project-form {
+    width:70%;
+    margin-left: 15%;
+}
+.project-header {
+    font-size:5rem;
+    margin-bottom:4rem;
+}
+.project-subheader {
+    font-size:4rem;
+    color:rgb(190,190,190);
+    margin-bottom:3rem;
+}
+.form-budget  {
+    display: flex;
+    margin-bottom:8rem;
+}
+.form-app-selection {
+    display: flex;
+    margin-bottom:8rem;
+}
+.form-inputs {
+    margin-bottom:0rem;
+}
+.form-check {
+    padding-left:0;
+}
+
+.form-input {
+    margin-bottom:6rem;
+    border:none;
+    height:auto;
+    width:100%;
+    color:black;
+    background:none !important;
+    padding-left:0.3rem;
+    padding-bottom:2rem;
+    font-size: 4rem;
+    border-bottom:1px solid rgb(190,190,190);
+    transition: 0.3s;
+}
+.form-input:focus {
+    outline:none;
+    border-bottom: 1px solid black;
+}
+.form-input::placeholder {
+    color:rgb(190,190,190);
+}
+.form-check-label {
+    padding:2rem;
+    border-radius:30px;
+    border:1px solid rgba(200,200,200,0.5);
+    box-shadow:1px 5px 10px rgba(200,200,200,0.3);
+    font-size:1.5rem;
+    text-align: center;
+    margin-right:1.25rem;
+}
+.form-check-label:hover {
+    cursor:pointer;
+    background-color: rgb(230,230,230);
+}
+
+input[type="radio"]:checked + label {
+    padding:22rem;
+}
+
+.form-check-input {
+    opacity:0;
+}
+
+.form-check-label input[type="radio"]:checked + .project-header {
+    background-color: black !important;
+}
+
+.file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    margin-bottom:6rem;
+}
+.file-input::before {
+        content: 'Add Attachment';
+        display: inline-block;
+        color: black;
+        outline: none;
+        cursor: pointer;
+        font-size: 2rem;
+        width:100%;
+        justify-content: center;
+        text-align: center;
+        transition: border-bottom 0.2s linear !important;
+}
+
+.form-attachment {
+    margin-bottom:2rem;
+}
+
+.paperclip-icon {
+    font-size:2.5rem;
+    margin-right: -20px;
+}
+.project-form-btn {
+    padding: 1.5rem 2.5rem;
+    font-size:2.3rem;
+    border:none;
+    border-radius:40px;
+    box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.2);
+    transition:0.2s all ease;
+    z-index:999 !important;
+    font-weight: 500;
+    margin-bottom: 6rem;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(107, 107, 147);
+    color:rgb(250,250,250);
+}
+
+.project-form-btn:hover {
+    transform:translateY(-2px);
+    
+}
+
+input[type='file'] {
+    color: transparent;
+  }
+
+.budget-label {
+    padding: 2rem 5rem;
+  }

@@ -32,7 +32,6 @@
 .wp-block-button__link:hover {
     color:black;
     background:white;
-    transform:translateY(-5px);
 }
 
 .newsletter-form-info {
