@@ -41,8 +41,8 @@ const ProjectInquiry = () => {
      
     <div className='project-contact-container'>
     <form ref={inquiry} onSubmit={sendEmail} className='project-form'>
-        <h6 className='project-header'>Hey, let's get to work. <span className='hand-emoji'>&#128075;</span></h6>
-        <p className='project-subheader'>I'm interested in...</p>
+        <h6 className='project-header'>Hey, lets get to work. <span className='hand-emoji'>&#128075;</span></h6>
+        <p className='project-subheader'>Im interested in...</p>
         <div className='form-app-selection'>
             <div className="form-check">
                 <label className='form-check-label' >
