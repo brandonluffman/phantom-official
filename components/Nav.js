@@ -54,53 +54,42 @@ function Nav() {
           </div>
         </Link>
         <div className="nav-buttons">
-          <button className="nav-lang-btn" type='button'>En</button>
-          <a href='#contact'><button className='nav-contact-btn' type='button'>Get in contact</button></a>
+          {/* <button className="nav-lang-btn" type='button'>En</button> */}
+          <Link href='/project'><button className='nav-contact-btn' type='button'>Get in contact</button></Link>
           {isActive? <MdClear className='hamburger-btn' onClick={toggleNav}/>:<MdMenu className='hamburger-btn' onClick={toggleNav} />}
         </div>
         <ul className="nav-menu" id='nav-menu' style={{right: showMe? "0":"-100%"}}>
           <h5 className="nav-menu-header">Menu</h5>
-          <li className="nav-item">
-            <Link href='/'>
-            <a href='' className="nav-link">
+          <Link href='/' className="nav-link">
+          <li className="nav-item" onClick={toggleNav}>
             Home
-            </a>
-            </Link>
           </li>
-          <li className="nav-item">
-          <Link href='/#about'>
-            <a href='' className="nav-link">
+          </Link>
+          <Link href='/#about' className="nav-link">
+          <li className="nav-item" onClick={toggleNav}>
               About
-            </a>
-            </Link>
           </li>
-          <li className="nav-item">
-            <Link href='/#services'>
-            <a href='' className="nav-link">
+          </Link>
+          <Link href='/#services' className="nav-link">
+          <li className="nav-item" onClick={toggleNav}>
               Services
-            </a>
-            </Link>
           </li>
-          <li className="nav-item">
-          <Link href='/blogs'>
-            <a href="" className="nav-link">
+          </Link>
+          <Link href='/blogs' className="nav-link">
+          <li className="nav-item" onClick={toggleNav}>
               Blog
-            </a>
-            </Link>
           </li>
-          <li className="nav-item">
-          <Link href='/#contact'>
-            <a href="" className="nav-link">
+          </Link>
+          <Link href='/project' className="nav-link">
+          <li className="nav-item nav-item-margin" onClick={toggleNav}>
               Contact
-            </a>
-            </Link>
           </li>
+          </Link>
           <div className="dropdown-brand-div">
-            <img className='' src='img.png' width='50'></img>
-
+            <img className='dropdown-brand-img' src='img.png'></img>
+            {/* <Link href='/project'><button className='dropdown-contact-btn' type='button'>Get in contact</button></Link>          */}
           </div>
         </ul>
-       
       </nav>
     </header>
     </div>

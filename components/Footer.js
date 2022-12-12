@@ -31,7 +31,8 @@ const Footer = () => {
           </div>
         <div className="row footer-copyright-row">
           <div className="col">
-            <p className="privacy-policy"><a className='privacy-policy-link' target='_blank' rel='noreferrer' href='https://www.privacypolicygenerator.info/live.php?token=fq9t1TiFaHOyzFbuoXruE8jyP4l8Fgdk'>Privacy Policy</a> | Terms of Use</p>
+            <p className="privacy-policy"><a className='privacy-policy-link' target='_blank' rel='noreferrer' href='https://www.privacypolicygenerator.info/live.php?token=X9rYsibwbs1UKYQ41C7KL0IBJSIEOkts'>Privacy Policy</a> | 
+            <a className='privacy-policy-link' target='_blank' rel='noreferrer' href='https://www.termsofusegenerator.net/live.php?token=WtIAwIaSx5ilU5RgC3s2N2AtWAptbnTh'>Terms Of Use</a></p>
           </div>
         </div>
       </div>

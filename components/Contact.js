@@ -25,14 +25,17 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("message sent");
           e.target.reset();
           document.getElementById('thank_you').style.display = 'block';
-
+          setTimeout(function(){
+            document.getElementById('thank_you').style.display = 'none';
+         }, 2000);
         },
         (error) => {
-          console.log(error.text);
+          document.getElementById('failure-msg').style.display = 'block';
+          setTimeout(function(){
+            document.getElementById('failure-msg').style.display = 'none';
+         }, 2000);
         }
       );
   };
@@ -49,11 +52,16 @@ const Contact = () => {
         <textarea name="message" className='contact-form-item message-input' placeholder="How can we help?" />
         <input type="submit" value="Send" className='contact-form-item contact-form-btn' />
             <div id="thank_you" style={{display: 'none'}}>
-            <p>Thanks for filling up the form!</p>
-            <button type="submit" onClick={closeBtn}>Close</button>
+            <p onClick={closeBtn}>Thanks for reaching out!</p>
+            </div>
+            <div id="failure-msg" style={{display: 'none'}}>
+            <p onClick={closeBtn}>Form failed, please try again.</p>
             </div>
       </form>
      
+      <div className="contact-sides">
+        <p>Not a fan of forms?</p>
+      </div>
       </div>
   );
 };

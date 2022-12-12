@@ -11,6 +11,7 @@
 .project-form {
     width:70%;
     margin-left: 15%;
+    transition:0.2s ease-in all;
 }
 .project-header {
     font-size:5rem;
@@ -26,16 +27,71 @@
     margin-bottom:8rem;
 }
 .form-app-selection {
-    display: flex;
-    margin-bottom:8rem;
+    display: block;
+    margin-bottom:6rem;
+}
+.radio-label {
+    margin-bottom:2rem;
 }
 .form-inputs {
     margin-bottom:0rem;
 }
-.form-check {
-    padding-left:0;
+
+.thankyou-div {
+    position:fixed;
+    height:100vh;
+    top:0;
+    bottom:0;
+    right:0;
+    width:100vw;
+    background-color: white;
+    z-index:999999999;
+    margin-top:0 !important;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-grid;
+}
+.thankyou-close {
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:4rem;
+}
+.thankyou-close:hover {
+    cursor: pointer;
+}
+.thankyou-thanks {
+    font-size:4rem;
 }
 
+#btn-ring{
+    display: none;
+    margin-top:0.5rem;
+  }
+  #btn-ring:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: ring 1.2s linear infinite;
+    margin-left:1rem;
+  }
+  @keyframes ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .form-btn-p {
+    margin-bottom:0rem;
+  }
 .form-input {
     margin-bottom:6rem;
     border:none;
@@ -56,32 +112,27 @@
 .form-input::placeholder {
     color:rgb(190,190,190);
 }
-.form-check-label {
-    padding:2rem;
+.radio-label {
+    padding:2rem 3rem;
     border-radius:30px;
-    border:1px solid rgba(200,200,200,0.5);
-    box-shadow:1px 5px 10px rgba(200,200,200,0.3);
+    box-shadow:1px 5px 10px rgba(200,200,200,0.4);
+    border:1px solid rgb(220, 220, 220);
     font-size:1.5rem;
     text-align: center;
     margin-right:1.25rem;
+
 }
-.form-check-label:hover {
+.radio-label:hover {
     cursor:pointer;
     background-color: rgb(230,230,230);
 }
-
-input[type="radio"]:checked + label {
-    padding:22rem;
+.form-app-selection input[type="radio"], .form-budget input[type="radio"] {
+        display: none;
 }
 
-.form-check-input {
-    opacity:0;
+.form-app-selection input[type="radio" i]:checked + label, .form-budget input[type="radio" i]:checked + label {
+    background-color: #a4d1f3;
 }
-
-.form-check-label input[type="radio"]:checked + .project-header {
-    background-color: black !important;
-}
-
 .file-input::-webkit-file-upload-button {
     visibility: hidden;
     margin-bottom:6rem;
@@ -101,11 +152,14 @@ input[type="radio"]:checked + label {
 
 .form-attachment {
     margin-bottom:2rem;
+
+
 }
 
 .paperclip-icon {
-    font-size:2.5rem;
+    font-size:3rem;
     margin-right: -20px;
+
 }
 .project-form-btn {
     padding: 1.5rem 2.5rem;
@@ -120,6 +174,8 @@ input[type="radio"]:checked + label {
     transition: 0.2s ease-in-out;
     background-color: rgb(107, 107, 147);
     color:rgb(250,250,250);
+    width:auto;
+    display: flex;
 }
 
 .project-form-btn:hover {
@@ -134,3 +190,39 @@ input[type='file'] {
 .budget-label {
     padding: 2rem 5rem;
   }
+
+.form-budget {
+    display: block;
+}
+
+
+@media only screen and (max-width: 870px) {
+    .project-form {
+        width:90%;
+        margin-left: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 870px) {
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .project-header {
+        font-size:3.5rem;
+    }
+
+    .project-subheader {
+        font-size:3rem;
+    }
+    .form-input {
+        font-size: 3rem;
+    }
+    .project-form-btn {
+        font-size: 2rem;
+    }
+  
+}
