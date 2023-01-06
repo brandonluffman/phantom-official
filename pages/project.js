@@ -3,6 +3,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import ProjectInquiry from '../components/ProjectInquiry';
 import Head from 'next/head';
+import Script from 'next/script';
 
 
 
@@ -10,6 +11,21 @@ const project = () => {
 
   return (
     <div>
+         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-W3Q83E2JE3"/>
+            <Script
+              id='google-analytics'
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-W3Q83E2JE3', {
+                    page_path: window.location.pathname,
+                  });
+                `,
+                }}
+            />
          <Head>
           <title>Phantom Technologies | Book A Project</title>
           <meta name="description" content="Book a web develpoment project or SEO campaign to jumpstart your business."/>

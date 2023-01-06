@@ -4,11 +4,27 @@ import Link from 'next/link';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import ServiceCards from '../components/ServiceCards';
-import { AiOutlineArrowDown } from 'react-icons/ai'
+import { AiOutlineArrowDown } from 'react-icons/ai';
+import Script from 'next/script';
 
 const services = () => {
   return (
     <div>
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-W3Q83E2JE3"/>
+            <Script
+              id='google-analytics'
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-W3Q83E2JE3', {
+                    page_path: window.location.pathname,
+                  });
+                `,
+                }}
+            />
          <Head>
           <title>Phantom Technologies | Web Development & SEO Services</title>
           <meta name="description" content="Phantom Technologies offers a variety of Web Development and SEO Services focused on building credibility and generating traffic."/>

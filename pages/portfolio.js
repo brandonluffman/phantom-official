@@ -5,11 +5,28 @@ import {BsArrowRight} from 'react-icons/bs';
 import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
 import Head from 'next/head';
+import Image from 'next/image';
+import Script from 'next/script';
 
 
 const portfolio = () => {
   return (
     <div>
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-W3Q83E2JE3"/>
+            <Script
+              id='google-analytics'
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-W3Q83E2JE3', {
+                    page_path: window.location.pathname,
+                  });
+                `,
+                }}
+            />
        <Head>
           <title>Phantom Technologies | Portfolio</title>
           <meta name="description" content="Take a look at some work we did for our clients."/>
@@ -47,10 +64,10 @@ const portfolio = () => {
       <div className='portfolio-grid'>
         <div className='portfolio-item goldshield-portfolio'>
         <div className='portfolio-graphic-container'>
-           <img className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio'></img>
+           <Image className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
           </div>
           <div className='portfolio-img-container'>
-           <img className='portfolio-item-img' src='/goldshield-logo.webp' alt='Client Logo'></img>
+           <Image className='portfolio-item-img' src='/goldshield-logo.webp' alt='Client Logo' />
           </div>
           <div className='portfolio-text-container'>
             <p className='portfolio-text-header'>Gold Shield</p>
@@ -68,10 +85,10 @@ const portfolio = () => {
             </div>
           </div> */}
         <div className='portfolio-graphic-container'>
-           <img className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio'></img>
+           <Image className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
           </div>
         <div className='portfolio-img-container'>
-           <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo'></img>
+           <Image className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
           </div>
           <div className='portfolio-text-container'>
             <p className='portfolio-text-header'>RANKI</p>
