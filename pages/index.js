@@ -76,7 +76,7 @@ export default function Home({ posts }) {
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <link rel="icon" type="image/png" href="/img.png" />
+          <link rel="icon" type="image/png" href="/img.png" alt="Favicon" />
           <link rel="apple-touch-icon" href="/img.png" /> 
           <link rel="canonical" href="https://phantomdm.com/"/>
             <meta property="og:type" content="article" />

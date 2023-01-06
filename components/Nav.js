@@ -4,7 +4,6 @@ import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from
 import Script from "next/script";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faAngleDown, faBars } from '@fortawesome/free-solid-svg-icons';
-import brandImg from '../public/img.png';
 import { MdMenu, MdClear } from 'react-icons/md';
 import Image from "next/image";
 
