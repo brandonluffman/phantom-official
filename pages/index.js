@@ -1,26 +1,18 @@
-import React, { useState, Component, useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head';
-import {GraphQLClient, gql} from 'graphql-request';
+import Image from 'next/image';
 import BlogCard from '../components/BlogCard';
 import Nav from '../components/Nav';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faArrowUpRightFromSquare, faCircle, faCheckCircle, faCheck, faCode, faMagnifyingGlassChart, faEnvelopeCircleCheck, faHandshake, faRocket } from '@fortawesome/free-solid-svg-icons';
-import {  faFacebookF, faInstagram, faLinkedin, faLinkedinIn, faTwitter , } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
-import Script from 'next/script';
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import $ from 'jquery';
-import {Helmet} from "react-helmet";
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
-import IndexPage from '../components/IndexPage';
-import {BsTools,BsFillAwardFill, BsAward, BsCursorFill} from 'react-icons/bs';
+import {GraphQLClient, gql} from 'graphql-request';
 import { GrDeploy } from 'react-icons/gr';
 import { MdDeveloperMode, MdOutlineSpeed, MdAnalytics, MdDraw } from 'react-icons/md';
-import { SiMicrostrategy, SiAltiumdesigner } from 'react-icons/si';
+import { SiMicrostrategy } from 'react-icons/si';
 import { BsArrowRight } from 'react-icons/bs';
 import { TbCircleDot } from 'react-icons/tb';
-import Image from 'next/image';
+import { useAmp } from 'next/amp';
 
 
 
@@ -74,6 +66,8 @@ export async function getStaticProps() {
 
 
 export default function Home({ posts }) {
+  const loadAmp = useAmp()
+
 
   return (
     <>

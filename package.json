@@ -8,7 +8,9 @@
     "postbuild": "next-sitemap",
     "export": "next build  && next export",
     "start": "NODE_ENV=production node server.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "ANALYZE=true next build",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
