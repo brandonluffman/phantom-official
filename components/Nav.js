@@ -86,10 +86,11 @@ function Nav() {
               Contact
           </li>
           </Link>
+          <li className="nav-item">
           <div className="dropdown-brand-div">
             <Image className='dropdown-brand-img' src='/img.png' alt='Brand Logo' height='100' width='100' />
-            {/* <Link href='/project'><button className='dropdown-contact-btn' type='button'>Get in contact</button></Link>          */}
           </div>
+          </li>
         </ul>
       </nav>
     </header>

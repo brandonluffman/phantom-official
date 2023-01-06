@@ -190,7 +190,7 @@ export default function Home({ posts }) {
       </div>
 
             <div className='service-attributes'>
-              <h6 className='serv-attributes-header'>Our Development Process</h6>
+              <h3 className='serv-attributes-header'>Our Development Process</h3>
               <div className='development-phases'>
                 <div className='dev-phase'>
                 <p className='phase-header'>Phase 1</p>
