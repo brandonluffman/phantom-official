@@ -17,7 +17,7 @@ function BlogPost({ title, author, coverPhoto, datePublished, slug, tag, descrip
         <p className={styles.description}>{description}</p>
         <div className={styles.details}>
           <div className={styles.author}>
-            <img className={styles.authorimg} src={author.avatar.url} alt={title.name} loading="lazy" />
+            <img className={styles.authorimg} src={author.avatar.url} alt='Blog Card Image' loading="lazy" />
             <h3 className={styles.authorname}>{author.name}</h3>
           </div>
           <div className={styles.date}>
