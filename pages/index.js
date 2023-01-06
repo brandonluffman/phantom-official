@@ -63,10 +63,9 @@ import { useAmp } from 'next/amp';
 
 
 
-
-
 export default function Home({ posts }) {
   const loadAmp = useAmp()
+
 
 
   return (
@@ -110,7 +109,6 @@ export default function Home({ posts }) {
             <div className="about-content-div">
               <div className='about-imgs-div'>
               <Image src='/img.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" width='300' height='300' />
-              <Link href='/portfolio'><p className='view-portfolio-btn'>View our portfolio  <BsArrowRight /></p></Link>
               </div>
               <div className='about-content-text-div'>
                   <h4 className='about-content-header'>ELEVATE Your Business with Phantom</h4>
@@ -119,6 +117,9 @@ export default function Home({ posts }) {
                    <div className='web-imgs-div'>
                   <div className='website-img web-img-1'></div>
                   <div className='website-img web-img-2'></div>
+              </div>
+              <div className='portfolio-btn-div'>
+              <Link href='/portfolio'><p className='view-portfolio-btn'>View our portfolio  <BsArrowRight /></p></Link>
               </div>
               </div>
             </div>
