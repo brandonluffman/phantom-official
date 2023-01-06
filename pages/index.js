@@ -72,7 +72,7 @@ export default function Home({ posts }) {
     <>
     <Head>
           <title>Phantom Technologies | Professional Website Development</title>
-          <meta name="description" content="Phantom Technologies is a website development and design company based in Arlington, VA with extensive experience building business websites, e-commerce websites, and web applications."/>
+          <meta name="description" content="Phantom Technologies is a website development and design company with extensive experience building business websites, e-commerce websites, and web applications."/>
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -115,8 +115,8 @@ export default function Home({ posts }) {
                   <p className='about-content-p'>Leading Web Development firm with professional design and development experience. We build sophisticated websites and full-stack web applications.</p>
                   <hr className='about-content-line'></hr>
                    <div className='web-imgs-div'>
-                  <div className='website-img web-img-1'></div>
-                  <div className='website-img web-img-2'></div>
+                  <div className='website-img web-img-1' aria-label="Website Image"></div>
+                  <div className='website-img web-img-2' aria-label="Website Image"></div>
               </div>
               <div className='portfolio-btn-div'>
               <Link href='/portfolio'><p className='view-portfolio-btn'>View our portfolio  <BsArrowRight /></p></Link>
