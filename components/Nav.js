@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faAngleDown, faBars } from '@fortawesome/free-solid-svg-icons';
 import brandImg from '../public/img.png';
 import { MdMenu, MdClear } from 'react-icons/md';
+import Image from "next/image";
 
 
 
@@ -45,7 +46,7 @@ function Nav() {
       <nav className={navbar ? 'scroll fixed-top' : 'navbar fixed-top'} id="navbar">
         <Link href="/" className="nav-logo">
           <div className="brand-img" id="brand-img">
-            <img src='/img.png' alt="Brand Logo" id='nav-brand-img' loading="lazy" />
+            <Image src='/img.png' alt="Brand Logo" id='nav-brand-img' loading="lazy" width='100' height='100' />
           </div>
         </Link>
         <div className="nav-buttons">

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://phantomdm.com
+
+# Sitemaps
+Sitemap: https://phantomdm.com/sitemap.xml

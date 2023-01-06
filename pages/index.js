@@ -20,6 +20,7 @@ import { MdDeveloperMode, MdOutlineSpeed, MdAnalytics, MdDraw } from 'react-icon
 import { SiMicrostrategy, SiAltiumdesigner } from 'react-icons/si';
 import { BsArrowRight } from 'react-icons/bs';
 import { TbCircleDot } from 'react-icons/tb';
+import Image from 'next/image';
 
 
 
@@ -74,9 +75,6 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
 
-
-  const [checked, setChecked] = React.useState(true);
-
   return (
     <>
     <Head>
@@ -117,7 +115,7 @@ export default function Home({ posts }) {
             <h3 className="container-header about-header">About Us</h3>
             <div className="about-content-div">
               <div className='about-imgs-div'>
-              <img src='/img.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" />
+              <Image src='/img.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" width='300' height='300' />
               <Link href='/portfolio'><p className='view-portfolio-btn'>View our portfolio  <BsArrowRight /></p></Link>
               </div>
               <div className='about-content-text-div'>
@@ -141,7 +139,7 @@ export default function Home({ posts }) {
             <div className='portfolio-grid home-services-grid'>
         <div className='portfolio-item goldshield-portfolio'>
         <div className='portfolio-graphic-container home-service-graphic'>
-           <img className='portfolio-item-graphic home-item-graphic' src='/web-app.jpeg' alt='Web Development Services Background' ></img>
+           <Image className='portfolio-item-graphic home-item-graphic' src='/web-app.jpeg' alt='Web Development Services Background' width='350' height='250' />
           </div>
           <div className='portfolio-text-container'>
             <h2 className='portfolio-text-header home-service-header'>Web Development</h2>
@@ -174,7 +172,7 @@ export default function Home({ posts }) {
         </div>
         <div className='portfolio-item'>
         <div className='portfolio-graphic-container home-service-graphic'>
-           <img className='portfolio-item-graphic home-item-graphic' src='/seo-analytics.png' alt='SEO Services Background' ></img>
+           <Image className='portfolio-item-graphic home-item-graphic' src='/seo-analytics.png' alt='SEO Services Background' width='300' height='250' />
           </div>
           <div className='portfolio-text-container'>
             <h2 className='portfolio-text-header home-service-header'>SEO</h2>

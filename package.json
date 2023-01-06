@@ -16,6 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@next/bundle-analyzer": "^13.1.1",
     "@sendgrid/mail": "^7.7.0",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
@@ -52,6 +53,7 @@
   },
   "devDependencies": {
     "eslint": "8.21.0",
-    "eslint-config-next": "12.2.4"
+    "eslint-config-next": "12.2.4",
+    "webpack-bundle-analyzer": "^4.7.0"
   }
 }
