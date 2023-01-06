@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: #f3f3f3 !important;
-
+    margin-top:-15px;
 }
 li {
     list-style: none;
@@ -268,7 +268,7 @@ a {
     height:auto;
 }
 .about-header {
-    margin-bottom:6rem;
+    margin-bottom:3rem;
 }
 .about-content-div {
     justify-content: center;
@@ -440,9 +440,9 @@ a {
     background-size:100%;
 }
 
-.website-img:hover {
-      /* transform: perspective(3000px) rotateY(5deg); */
-    }
+/* .website-img:hover {
+      transform: perspective(3000px) rotateY(5deg);
+    } */
 
 .web-img-2 {
         background-image: url('/landingpage.webp');

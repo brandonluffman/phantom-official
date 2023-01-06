@@ -72,21 +72,21 @@ export default function Home({ posts }) {
 
   return (
     <>
-       <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-W3Q83E2JE3"/>
-            <Script
-              id='google-analytics'
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', 'G-W3Q83E2JE3', {
-                    page_path: window.location.pathname,
-                  });
-                `,
-                }}
-            />
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-W3Q83E2JE3"/>
+        <Script
+        id='google-analytics'
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+        __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W3Q83E2JE3', {
+        page_path: window.location.pathname,
+        });
+        `,
+        }}
+        />
     <Head>
           <title>Phantom Technologies | Professional Website Development</title>
           <meta name="description" content="Phantom Technologies is a website development and design company with extensive experience building business websites, e-commerce websites, and web applications."/>
