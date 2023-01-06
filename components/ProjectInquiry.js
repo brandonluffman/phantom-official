@@ -62,22 +62,26 @@ const ProjectInquiry = () => {
                 <label className='radio-label' htmlFor='select-3'>Ecommerce Website</label>
                 <input id='select-4' type="radio" name="interest" value="Web App" className="radio-input"/>
                 <label className='radio-label' htmlFor='select-4'>Web App</label>
+                <input id='select-5' type="radio" name="interest" value="Local SEO" className="radio-input"/>
+                <label className='radio-label' htmlFor='select-5'>Local SEO</label>
+                <input id='select-6' type="radio" name="interest" value="SEO" className="radio-input"/>
+                <label className='radio-label' htmlFor='select-6'>SEO</label>
         </div>
         <div className='form-inputs'>
                 <input type='text' placeholder='Your name *' className='form-input' name="name" required/><br></br>
                 <input type='email' placeholder='Your email *' className='form-input' name="email" required/><br></br>
                 <textarea placeholder='Tell us about your project *' className='form-input' name='message' required/>
         </div>
-        <p className='project-subheader'>Project Budget (USD) *</p>
+        <p className='project-subheader'>Project Budget ($ USD) *</p>
         <div className='form-budget'>
-                    <input type="radio" name="budget" id='select-5' value="1-2k" className="radio-input"/>
-                    <label className='radio-label budget-label' htmlFor='select-5'>1-2k</label>
-                    <input type="radio" name="budget" id='select-6' value="2-5k" className="radio-input"/>
-                    <label className='radio-label budget-label' htmlFor='select-6'>2-5k</label>
-                    <input type="radio" name="budget" id='select-7' value="5-10k" className="radio-input"/>
-                    <label className='radio-label budget-label' htmlFor='select-7'>5-10k</label>
-                    <input type="radio" name="budget" id='select-8' value="10k+" className="radio-input"/>
-                    <label className='radio-label budget-label' htmlFor='select-8'>10k+</label>
+                    <input type="radio" name="budget" id='select-7' value="1-2k" className="radio-input"/>
+                    <label className='radio-label budget-label' htmlFor='select-7'>1-2k</label>
+                    <input type="radio" name="budget" id='select-8' value="2-5k" className="radio-input"/>
+                    <label className='radio-label budget-label' htmlFor='select-8'>2-5k</label>
+                    <input type="radio" name="budget" id='select-9' value="5-10k" className="radio-input"/>
+                    <label className='radio-label budget-label' htmlFor='select-9'>5-10k</label>
+                    <input type="radio" name="budget" id='select-10' value="10k+" className="radio-input"/>
+                    <label className='radio-label budget-label' htmlFor='select-10'>10k+</label>
         </div>
 {/* 
         <div className='form-attachment'>

@@ -1,0 +1,247 @@
+
+
+.service-div {
+    text-align: left;
+    transition:0.3s ease all;  
+    display: flex;
+    margin-bottom:8rem;
+    box-shadow: 1px 5px 12px rgba(161, 161, 161, 0.3);
+    border-radius:10px;
+    overflow: hidden;
+    height:auto;
+}
+
+.service-img {
+    width:100%;
+    height:auto;
+}
+.service-header {
+    font-size:3.5rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.service-description {
+    font-size:1.5rem;
+    margin-bottom:5rem;
+}
+
+.service-hr {
+    width:8%;
+    margin-bottom:1rem;
+    color:black !important;
+
+}
+.service-subheader {
+    margin-bottom:-0.5rem;
+    font-size:1.1rem;
+    font-weight:300;
+    color:rgb(100,100,100);
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+}
+.service-img-div {
+    width:40%;
+    box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.1);
+    padding:5rem 5rem;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius:0px;
+    display: inherit;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.img-div-1 {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.img-div-2 {
+    background: radial-gradient(circle, rgba(222,222,209,1) 0%, rgba(162,163,138,1) 100%);
+}
+.img-div-3 {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 82%);
+}
+
+.img-div-4 {
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 82%);
+
+}
+
+.service-content {
+    width:60%;
+    padding:4rem 4rem 0rem 6rem;
+}
+
+.service-content-flipped {
+    width:60%;
+    padding:4rem 6rem 0rem 4rem;
+}
+
+.service-btn {
+    padding: 1.3rem 2.2rem;
+    font-size:1.5rem;
+    border:none;
+    color:white;
+    background:rgb(107, 107, 147);
+    border-radius:40px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition:0.2s all ease;
+    font-weight: 500;
+    position: relative;
+    margin-right: 1rem;
+}
+
+.service-project-btn {
+    background-color: #92d7ff;
+}
+
+
+
+.service-btn-div {
+    position: relative;
+    margin-bottom:2rem;
+}
+
+.service-project-btn {
+    position:relative;
+
+}
+
+.service-learn-btn {
+    position:relative;
+}
+
+
+.service-btn {
+    margin-bottom:2rem !important;
+    transition: 0.2s ease all;
+}
+
+.service-btn:hover {
+    transform: translateY(-3px) !important;
+}
+
+
+svg path {
+    stroke:auto;
+} 
+
+.subelement-icon {
+    outline:none;
+    color:#92d7ff;
+    font-size: 1.5rem;
+    margin-right:2rem;
+
+}
+
+.service-subelement {
+    display: flex;
+    font-size:2rem;
+    font-weight: 500;
+    align-items: center;
+}
+.service-subelements {
+    margin-bottom:4rem;
+
+}
+
+.service-price {
+    font-size:4rem;
+    margin-bottom:5rem;
+    font-weight:300;
+}
+
+.light-text {
+    font-weight:200;
+}
+.dark-text {
+    font-weight:300;
+}
+
+
+
+.service-pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+    .service-div {
+        display: block;
+        height:auto;
+        max-height: none;
+    }
+    .service-content {
+        width:100%;
+        padding:4rem 4rem 0rem 6rem;
+    }
+    
+    .service-content-flipped {
+        width:100%;
+        padding:4rem 6rem 0rem 4rem;
+    }
+
+    .mobile-flip {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .service-img-div {
+        width:100%;
+        box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.1);
+        padding:8rem 0rem;
+        border-radius:0px;
+        justify-content: center;
+        text-align: center;
+    }
+    .service-img {
+        width:60%;
+    }
+
+
+    .service
+
+    .service-btn {
+        margin-bottom:2rem !important;
+    }
+
+   
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .services-div {
+        padding:0rem 6rem !important;
+    }
+    .service-pricing {
+        display: block;
+    }
+
+
+    .service-content, .service-content-flipped {
+        padding-left:2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .service-project-btn {
+        position:absolute;
+        bottom:-95px;
+        left:0px;
+        margin-bottom: 6rem !important;
+    }
+
+    .service-btn {
+        min-width: 150px;
+    }
+    .service-btn-div {
+        margin-bottom:6rem;
+        display: flex !important;
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    .services-div {
+        padding: 0rem 2rem !important;
+    }
+}

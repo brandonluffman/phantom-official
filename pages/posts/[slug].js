@@ -27,6 +27,8 @@ import {
 } from 'next-share';
 import { useState } from 'react';
 import { Form } from "reactstrap";
+import Head from 'next/head';
+
 
 const graphcms = new GraphQLClient(
   "https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
@@ -93,9 +95,29 @@ export async function getStaticProps({ params }) {
 
 export default function BlogPost({ post }) {
 
-
   return (
     <div>
+       <Head>
+          <title>{post.title} - Phantom Technologies</title>
+          <meta name="description" content={post.description} />
+          <meta charSet="utf-8" />
+          <meta name="robots" content="index, follow" />
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <link rel="icon" type="image/png" href="/img.png" />
+          <link rel="apple-touch-icon" href="/img.png" /> 
+          <link rel="canonical" href={`https://phantomdm.com/posts/{post.slug}`}/>
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
+            <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+            <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+            <meta property="og:url" content="PERMALINK" />
+            <meta property="og:site_name" content="SITE NAME" />
+            <meta name="twitter:title" content="TITLE OF POST OR PAGE" />
+            <meta name="twitter:description" content="DESCRIPTION OF PAGE CONTENT" />
+            <meta name="twitter:image" content="LINK TO IMAGE" />
+            <meta name="twitter:site" content="@USERNAME" />
+            <meta name="twitter:creator" content="@USERNAME" />
+      </Head>
     <Nav />
     <ProgressBar />
     <div className={styles.slugcontainer}>
@@ -146,7 +168,7 @@ export default function BlogPost({ post }) {
             <h4 className={styles.inputcardheader}>Looking to <b>Boost Traffic?</b></h4>
             <p className={styles.inputcardtext}>{`Hey, we're Phantom. We specialize in boosting quality traffic to businesses. Let's get you started.`}</p>
             <div className={styles.inputcardemaildiv}>
-                  <Link href='../#contact'><input type='submit' className={styles.inputcardbtn} value='Contact Us' /></Link>
+                  <Link href='/project'><input type='submit' className={styles.inputcardbtn} value='Contact Us' /></Link>
             </div>
           </div>
         </div>

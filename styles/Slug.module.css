@@ -274,7 +274,7 @@
   @media only screen and (max-width: 900px) {
     .slugcontainer {
       display: block !important;
-      text-align: center !important;
+      text-align: left !important;
       justify-content: center !important;
     }
 

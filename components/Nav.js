@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Script from "next/script";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,37 +20,32 @@ function Nav() {
       setIsActive(!isActive);
     }
 
+    const [navbar, setNavbar] = useState(false);
+
+  
+    const changeBackground = () => {
+      if (window.scrollY >= 40) {
+        setNavbar(true);
+
+      } else {
+        setNavbar(false);
+  
+      }
+    };
+
+    useEffect(() => {
+      window.addEventListener('scroll', changeBackground, true);
+      return () => window.removeEventListener('scroll', changeBackground);
+    }, []);
+
 
   return (
   <div>
-    <Script id="show-banner" strategy="lazyOnload">
-            {`  window.onscroll = function() {scrollFunction()};
-
-              function scrollFunction() {
-                if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-                  document.getElementById("navbar").style.height = "75px";
-                  document.getElementById("navbar").style.background = "rgba(245,245,245,0.75)";
-                  document.getElementById("navbar").style.boxShadow = "1px 2px 4px lightgrey";
-                  document.getElementById("nav-brand-img").style.width = "50px";
-
-                } else {
-                  document.getElementById("navbar").style.height = "150px";
-                  document.getElementById("navbar").style.background = "transparent";
-                  document.getElementById("navbar").style.boxShadow = "none";
-                  document.getElementById("nav-brand-img").style.width = "75px";
-
-                }
-              } 
-             
-              `}
-          </Script>
-
-
     <header className="header">
-      <nav className="navbar fixed-top" id="navbar">
+      <nav className={navbar ? 'scroll fixed-top' : 'navbar fixed-top'} id="navbar">
         <Link href="/" className="nav-logo">
           <div className="brand-img" id="brand-img">
-            <img src='/img.png' alt="Logo" id='nav-brand-img' loading="lazy" />
+            <img src='/img.png' alt="Brand Logo" id='nav-brand-img' loading="lazy" />
           </div>
         </Link>
         <div className="nav-buttons">
@@ -70,9 +65,14 @@ function Nav() {
               About
           </li>
           </Link>
-          <Link href='/#services' className="nav-link">
+          <Link href='/services' className="nav-link">
           <li className="nav-item" onClick={toggleNav}>
               Services
+          </li>
+          </Link>
+          <Link href='/portfolio' className="nav-link">
+          <li className="nav-item" onClick={toggleNav}>
+              Portfolio
           </li>
           </Link>
           <Link href='/blogs' className="nav-link">
@@ -86,7 +86,7 @@ function Nav() {
           </li>
           </Link>
           <div className="dropdown-brand-div">
-            <img className='dropdown-brand-img' src='img.png'></img>
+            <img className='dropdown-brand-img' src='/img.png' alt='Brand Logo'></img>
             {/* <Link href='/project'><button className='dropdown-contact-btn' type='button'>Get in contact</button></Link>          */}
           </div>
         </ul>

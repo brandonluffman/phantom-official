@@ -14,11 +14,12 @@ import {Helmet} from "react-helmet";
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import IndexPage from '../components/IndexPage';
-import NewsletterSubscribe from '../components/NewsletterSubscribe';
 import {BsTools,BsFillAwardFill, BsAward, BsCursorFill} from 'react-icons/bs';
 import { GrDeploy } from 'react-icons/gr';
 import { MdDeveloperMode, MdOutlineSpeed, MdAnalytics, MdDraw } from 'react-icons/md';
 import { SiMicrostrategy, SiAltiumdesigner } from 'react-icons/si';
+import { BsArrowRight } from 'react-icons/bs';
+import { TbCircleDot } from 'react-icons/tb';
 
 
 
@@ -78,11 +79,31 @@ export default function Home({ posts }) {
 
   return (
     <>
-    <IndexPage />
+    <Head>
+          <title>Phantom Technologies | Professional Website Development</title>
+          <meta name="description" content="Phantom Technologies is a website development and design company based in Arlington, VA with extensive experience building business websites, e-commerce websites, and web applications."/>
+          <meta charSet="utf-8" />
+          <meta name="robots" content="index, follow" />
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <link rel="icon" type="image/png" href="/img.png" />
+          <link rel="apple-touch-icon" href="/img.png" /> 
+          <link rel="canonical" href="https://phantomdm.com/"/>
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
+            <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+            <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+            <meta property="og:url" content="PERMALINK" />
+            <meta property="og:site_name" content="SITE NAME" />
+            <meta name="twitter:title" content="TITLE OF POST OR PAGE" />
+            <meta name="twitter:description" content="DESCRIPTION OF PAGE CONTENT" />
+            <meta name="twitter:image" content="LINK TO IMAGE" />
+            <meta name="twitter:site" content="@USERNAME" />
+            <meta name="twitter:creator" content="@USERNAME" />
+      </Head>
       <Nav />
         <div className="container-fluid landing-container" id="home">
           <div className="row landing-row">
-            <h3 className="landing-subheader">Phantom Technologies</h3>
+            <h2 className="landing-subheader">Phantom Technologies</h2>
             <h1 className="landing-header">Websites That Convert</h1>
             <div className="landing-btns">
               <Link href='/project'><button className="landing-btn launch-btn">Start a Project</button></Link>
@@ -96,7 +117,8 @@ export default function Home({ posts }) {
             <h3 className="container-header about-header">About Us</h3>
             <div className="about-content-div">
               <div className='about-imgs-div'>
-              <img src='/img.png' className="about-img about-brand-img" alt='logo' loading="lazy" />
+              <img src='/img.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" />
+              <Link href='/portfolio'><p className='view-portfolio-btn'>View our portfolio  <BsArrowRight /></p></Link>
               </div>
               <div className='about-content-text-div'>
                   <h4 className='about-content-header'>ELEVATE Your Business with Phantom</h4>
@@ -115,68 +137,66 @@ export default function Home({ posts }) {
         <div className="container-fluid services-container" id="services">
           <div className="row">
             <h3 className="container-header testimonials-header">Services</h3>
-            <div className='services-div'>
-              <div className='business-website-div service-div'>
-                <div className='service-img-div img-div-1'>
-                <img src='../landing.png' className='service-img service-img-1'></img>
-                </div>
-                <div className='service-content'>
-                <p className='service-subheader'>Service</p>
-                <hr className='service-hr'></hr>
-                <h2 className='service-header'>Business Websites</h2>
-                <p className='service-description'>User-centered design that boosts lead generation and increases revenue.</p>
-                <div className='service-btn-div'>
-                <Link href='/project'><button type='button' className='service-btn service-project-btn'>Start a Project</button></Link>
-                <Link href='/project'><button type='button' className='service-btn service-learn-btn'>Learn More</button></Link>
-                </div>
-                </div>
-              </div>
-              <div className='ecommerce-website-div service-div mobile-flip'>
-                <div className='service-content service-content-flipped'>
-                <p className='service-subheader'>Service</p>
-                <hr className='service-hr'></hr>
-                <h2 className='service-header'>Ecommerce Websites</h2>
-                <p className='service-description'>Our Ecommerce specialists design and build high converting websites included with all modern Ecommerce features.</p>
-                <div className='service-btn-div'>
-                <Link href='/project'><button type='button' className='service-btn service-project-btn'>Start a Project</button></Link>
-                <Link href='/project'><button type='button' className='service-btn service-learn-btn'>Learn More</button></Link>
-                </div>
-                </div>
-                <div className='service-img-div img-div-2'>
-                <img src='../ecommerce.jpeg' className='service-img service-img-2'></img>
-                </div>
-              </div> 
-              <div className='ecommerce-website-div service-div'>
-              <div className='service-img-div img-div-3'>
-                <img src='../custom-web.jpeg' className='service-img service-img-3'></img>
-                </div>
-                <div className='service-content service-content'>
-                <p className='service-subheader'>Service</p>
-                <hr className='service-hr'></hr>
-                <h2 className='service-header'>Custom Websites</h2>
-                <p className='service-description'>Have a design in mind? Our developers will work effortlessly to provide you with a website fit to your specifications.</p>
-                <div className='service-btn-div'>
-                <Link href='/project'><button type='button' className='service-btn service-project-btn'>Start a Project</button></Link>
-                <Link href='/project'><button type='button' className='service-btn service-learn-btn'>Learn More</button></Link>
-                </div>
-                </div>
-              </div> 
-              <div className='web-apps-div service-div mobile-flip'>
-                <div className='service-content-flipped'>
-                <p className='service-subheader'>Service</p>
-                <hr className='service-hr'></hr>
-                <h2 className='service-header'>Web Applications</h2>
-                <p className='service-description'>Our Web App Development team builds full-stack web and front-end applications using modern tech stacks for innovative tech brands and companies.</p>
-                <div className='service-btn-div'>
-                <Link href='/project'><button type='button' className='service-btn service-project-btn'>Start a Project</button></Link>
-                <Link href='/project'><button type='button' className='service-btn service-learn-btn'>Learn More</button></Link>
-                </div>
-                </div>
-                <div className='service-img-div img-div-4'>
-                <img src='../web-app.jpeg' className='service-img service-img-4'></img>
-                </div>
-              </div>
-            </div>
+            
+            <div className='portfolio-grid home-services-grid'>
+        <div className='portfolio-item goldshield-portfolio'>
+        <div className='portfolio-graphic-container home-service-graphic'>
+           <img className='portfolio-item-graphic home-item-graphic' src='/web-app.jpeg' alt='Web Development Services Background' ></img>
+          </div>
+          <div className='portfolio-text-container'>
+            <h2 className='portfolio-text-header home-service-header'>Web Development</h2>
+            <h3 className='portfolio-text-content home-service-text'>Website Development & Design from small business websites to mass-scale applications.</h3>
+                        <Link href='/services/#businesswebsites'>
+                        <div className='service-subelement home-service-subelement'>
+                            <TbCircleDot className='subelement-icon home-subelement-icon'/><h2 className='service-subelement-name home-subelement-name'>Business Websites</h2>
+                        </div>
+                        </Link>
+                        <Link href='/services/#ecommercewebsites'>
+                        <div className='service-subelement home-service-subelement'>
+                        <TbCircleDot className='subelement-icon home-subelement-icon'/><h2 className='service-subelement-name home-subelement-name'>Ecommerce Websites</h2>
+                        </div>
+                        </Link>
+                        <Link href='/services/#customwebsites'>
+                        <div className='service-subelement home-service-subelement'>
+                        <TbCircleDot className='subelement-icon home-subelement-icon'/><h2 className='service-subelement-name home-subelement-name'>Custom Websites</h2>
+                        </div>
+                        </Link>
+                        <Link href='/services/#webapps'>
+                        <div className='service-subelement home-service-subelement'>
+                        <TbCircleDot className='subelement-icon home-subelement-icon'/><h2 className='service-subelement-name home-subelement-name'>Web Applications</h2>
+                        </div>
+                        </Link>
+          </div>
+          <hr className='portfolio-horizontal-line'></hr>
+          <div className='portfolio-btn-div'>
+          <Link href='/services/#webdev'><button type='button' className='portfolio-item-btn'>Learn more <BsArrowRight className='portfolio-arrow'/></button></Link>
+          </div>
+        </div>
+        <div className='portfolio-item'>
+        <div className='portfolio-graphic-container home-service-graphic'>
+           <img className='portfolio-item-graphic home-item-graphic' src='/seo-analytics.png' alt='SEO Services Background' ></img>
+          </div>
+          <div className='portfolio-text-container'>
+            <h2 className='portfolio-text-header home-service-header'>SEO</h2>
+            <p className='portfolio-text-content home-service-text'>Site redevelopment focused on SEO optimization and boosting traffic with a higher search ranking.</p>
+                        <Link href='/services/#localseo'>
+                        <div className='service-subelement home-service-subelement'>
+                        <TbCircleDot className='subelement-icon home-subelement-icon'/><h2 className='service-subelement-name home-subelement-name'>Local SEO</h2>
+                        </div>
+                        </Link>
+                        <Link href='/services/#seo'>
+                        <div className='service-subelement home-service-subelement'>
+                        <TbCircleDot className='subelement-icon home-subelement-icon'/><h2 className='service-subelement-name home-subelement-name'>SEO</h2>
+                        </div>
+                        </Link>
+          </div>
+          <hr className='portfolio-horizontal-line hr-dark'></hr>
+          <div className='portfolio-btn-div'>
+          <Link href='/services/#seo'><button type='button' className='portfolio-item-btn'><span className='dark-text'>Learn more </span><BsArrowRight className='portfolio-arrow arrow-dark'/></button></Link>
+          </div>
+        </div>
+      </div>
+
             <div className='service-attributes'>
               <h6 className='serv-attributes-header'>Our Development Process</h6>
               <div className='development-phases'>
@@ -215,7 +235,7 @@ export default function Home({ posts }) {
           </div>
         </div>
 
-{/*
+
         <div className="container-fluid blog-container" id="blog">
           <div className="row blog-row">
             <h3 className="container-header testimonials-header">Blog</h3>
@@ -236,10 +256,10 @@ export default function Home({ posts }) {
           </main>
           </div>
           <div className='see-more-row'>
-            <Link href='/blogs'><button className='blog-link'>See All</button></Link>
+          <Link href='/blogs'><p className='blog-btn'>View all blogs  <BsArrowRight /></p></Link>
           </div>
         </div>
-*/}
+
 
         <div className="container-fluid contact-container" id="contact">
           <h3 className="container-header contact-header">Get In Touch</h3>

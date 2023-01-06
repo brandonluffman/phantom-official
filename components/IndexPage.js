@@ -5,7 +5,7 @@ function IndexPage() {
   return (
       <Head>
           <title>Phantom Technologies | Professional Website Development</title>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta property="og:type" content="website" />
           <meta name="og:title" property="og:title" content="Phantom Technologies" />
           <meta name="og:description" property="og:description" content="" />
