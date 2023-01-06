@@ -411,7 +411,7 @@ a {
 }   
 
 .web-img-1 {
-    background-image: url('/hapebeast.png');
+    background-image: url('/hapebeast.webp');
     height:58rem;
     width:35rem !important;
     background-size:100%;
@@ -422,7 +422,7 @@ a {
     }
 
 .web-img-2 {
-        background-image: url('/landingpage.png');
+        background-image: url('/landingpage.webp');
         height:58rem;
         width:35rem !important;
         background-size:100%;

@@ -16,50 +16,50 @@ import { useAmp } from 'next/amp';
 
 
 
-const graphcms = new GraphQLClient(
-"https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
-);
+// const graphcms = new GraphQLClient(
+// "https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
+// );
 
-const QUERY = gql`
-  {
-    posts {
-      id
-      title
-      description
-      datePublished
-      slug
-      content {
-        html
-      }
-      author {
-        name
-        avatar {
-          url
-        }
-      }
-      coverPhoto {
-        publishedAt
-        createdBy {
-          id
-        }
-        url
-      }
-      tag {
-        tagDrop
-      }
-    }
-  }
-`;
+// const QUERY = gql`
+//   {
+//     posts {
+//       id
+//       title
+//       description
+//       datePublished
+//       slug
+//       content {
+//         html
+//       }
+//       author {
+//         name
+//         avatar {
+//           url
+//         }
+//       }
+//       coverPhoto {
+//         publishedAt
+//         createdBy {
+//           id
+//         }
+//         url
+//       }
+//       tag {
+//         tagDrop
+//       }
+//     }
+//   }
+// `;
 
-export async function getStaticProps() {
-  const { posts } = await graphcms.request(QUERY);
-  return {
-    props: {
-      posts,
-    },
-    revalidate: 30,
-  };
-}
+// export async function getStaticProps() {
+//   const { posts } = await graphcms.request(QUERY);
+//   return {
+//     props: {
+//       posts,
+//     },
+//     revalidate: 30,
+//   };
+// }
 
 
 
@@ -228,7 +228,7 @@ export default function Home({ posts }) {
         </div>
 
 
-        <div className="container-fluid blog-container" id="blog">
+        {/* <div className="container-fluid blog-container" id="blog">
           <div className="row blog-row">
             <h3 className="container-header testimonials-header">Blog</h3>
             <main className='home-blog'>
@@ -250,7 +250,7 @@ export default function Home({ posts }) {
           <div className='see-more-row'>
           <Link href='/blogs'><p className='blog-btn'>View all blogs  <BsArrowRight /></p></Link>
           </div>
-        </div>
+        </div> */}
 
 
         <div className="container-fluid contact-container" id="contact">
