@@ -35,7 +35,8 @@ padding:0rem 0.2rem;
 
 .social-icon {
     font-size:3rem;
-    margin: 1rem 1rem;  
+    margin: 1rem 1rem; 
+    cursor:pointer; 
 }
 
 .privacy-policy {

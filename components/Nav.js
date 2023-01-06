@@ -54,7 +54,7 @@ function Nav() {
           {isActive? <MdClear className='hamburger-btn' onClick={toggleNav}/>:<MdMenu className='hamburger-btn' onClick={toggleNav} />}
         </div>
         <ul className="nav-menu" id='nav-menu' style={{right: showMe? "0":"-100%"}}>
-          <h5 className="nav-menu-header">Menu</h5>
+          <li className="nav-item"><h5 className="nav-menu-header">Menu</h5></li>
           <Link href='/' className="nav-link">
           <li className="nav-item" onClick={toggleNav}>
             Home
