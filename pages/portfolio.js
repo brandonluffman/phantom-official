@@ -75,7 +75,7 @@ const portfolio = () => {
           </div>
           <hr className='portfolio-horizontal-line'></hr>
           <div className='portfolio-btn-div'>
-          <Link href='/portfolio/goldshield'><button type='button' className='portfolio-item-btn'>View case study <BsArrowRight className='portfolio-arrow'/></button></Link>
+          <a href="https://goldshield.vercel.app" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>View case study <BsArrowRight className='portfolio-arrow'/></button></a>
           </div>
         </div>
         <div className='portfolio-item'>
