@@ -40,7 +40,7 @@ function Nav() {
 
 
   return (
-  <div>
+
     <header className="header">
       <nav className={navbar ? 'scroll fixed-top' : 'navbar fixed-top'} id="navbar">
         <Link href="/" className="nav-logo">
@@ -93,7 +93,6 @@ function Nav() {
         </ul>
       </nav>
     </header>
-    </div>
   );
 }
 
