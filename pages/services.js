@@ -50,7 +50,7 @@ const services = () => {
         <div className='services-page-container'>
             <div className='services-page-landing'>
               <div className='services-page-landing-div'>
-              <h3 className='services-page-header'><span className='color-change'>Web Development</span> from small business <span className='color-change'>websites</span> to mass-scale <span className='color-change'>applications</span>.</h3>
+              <h1 className='services-page-header'><span className='color-change'>Web Development</span> from small business <span className='color-change'>websites</span> to mass-scale <span className='color-change'>applications</span>.</h1>
               <AiOutlineArrowDown className='bounce' />
               </div>
             </div>

@@ -89,7 +89,7 @@ export default function Home({ posts }) {
         />
     <Head>
           <title>Phantom Technologies | Professional Website Development</title>
-          <meta name="description" content="Phantom Technologies is a website development and design company with extensive experience building business websites, e-commerce websites, and web applications."/>
+          <meta name="description" content="Phantom Technologies is a website development and design company with extensive experience building websites and web applications."/>
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -128,8 +128,8 @@ export default function Home({ posts }) {
               <Image src='/img.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" width='300' height='300' />
               </div>
               <div className='about-content-text-div'>
-                  <h4 className='about-content-header'>ELEVATE Your Business with Phantom</h4>
-                  <p className='about-content-p'>Leading Web Development firm with professional design and development experience. We build sophisticated websites and full-stack web applications.</p>
+                  <p className='about-content-header'>ELEVATE Your Business with Phantom</p>
+                  <h3 className='about-content-p'>Leading Web Development firm with professional design and development experience. We build sophisticated websites and full-stack web applications.</h3>
                   <hr className='about-content-line'></hr>
                    <div className='web-imgs-div'>
                   <div className='website-img web-img-1' aria-label="Website Image"></div>
@@ -146,7 +146,7 @@ export default function Home({ posts }) {
 
         <div className="container-fluid services-container" id="services">
           <div className="row">
-            <h3 className="container-header testimonials-header">Services</h3>
+            <h6 className="container-header testimonials-header">Services</h6>
             
             <div className='portfolio-grid home-services-grid'>
         <div className='portfolio-item goldshield-portfolio'>
@@ -208,7 +208,7 @@ export default function Home({ posts }) {
       </div>
 
             <div className='service-attributes'>
-              <h3 className='serv-attributes-header'>Our Development Process</h3>
+              <p className='serv-attributes-header'>Our Development Process</p>
               <div className='development-phases'>
                 <div className='dev-phase'>
                 <p className='phase-header'>Phase 1</p>
@@ -272,7 +272,7 @@ export default function Home({ posts }) {
 
 
         <div className="container-fluid contact-container" id="contact">
-          <h3 className="container-header contact-header">Get In Touch</h3>
+          <p className="container-header contact-header">Get In Touch</p>
           <Contact />
         </div>
         <Footer />

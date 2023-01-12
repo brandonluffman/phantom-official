@@ -16,7 +16,7 @@ const ServiceCards = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                 <h2 className='service-header'>Business Websites</h2>
-                        <h6 className='service-price'>$1,500 <span className='light-text'></span></h6>
+                        <p className='service-price'>$1,500 <span className='light-text'></span></p>
                 </div>
                 <p className='service-description'>User-centered design that boosts lead generation and increases revenue.</p>
                 <div className='service-subelements'>
@@ -47,7 +47,7 @@ const ServiceCards = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                 <h2 className='service-header'>Ecommerce Websites</h2>
-                        <h6 className='service-price'>$10,000 <span className='light-text'></span></h6>
+                        <p className='service-price'>$10,000 <span className='light-text'></span></p>
                 </div>
                 <p className='service-description'>Our Ecommerce specialists design and build high converting websites included with all modern Ecommerce features.</p>
                 <div className='service-subelements'>
@@ -84,7 +84,7 @@ const ServiceCards = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                 <h2 className='service-header'>Custom Websites</h2>
-                        <h6 className='service-price'>$2,000 <span className='light-text'></span></h6>
+                        <p className='service-price'>$2,000 <span className='light-text'></span></p>
                 </div>
                 <p className='service-description'>Have a design in mind? Our developers will work effortlessly to provide you with a website fit to your specifications.</p>
                 <div className='service-subelements'>
@@ -115,7 +115,7 @@ const ServiceCards = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                 <h2 className='service-header'>Web Applications</h2>
-                        <h6 className='service-price'>$25,000<span className='dark-text'>+</span></h6>
+                        <p className='service-price'>$25,000<span className='dark-text'>+</span></p>
                 </div>
                 <p className='service-description'>Our Web App Development team builds full-stack web and front-end applications using modern tech stacks for innovative tech brands and companies.</p>
                 <div className='service-subelements'>
@@ -154,7 +154,7 @@ const ServiceCards = () => {
                     <hr className='service-hr'></hr>
                     <div className='service-pricing'>
                     <h2 className='service-header'>Local SEO</h2>
-                        <h6 className='service-price'>$1,000 <span className='light-text'>/ mo</span></h6>
+                        <p className='service-price'>$1,000 <span className='light-text'>/ mo</span></p>
                     </div>
                     <p className='service-description'>Looking to <b>dominate the search rankings in your area</b> and generate more traffic to your business? Optimize your Local SEO stategy with our expert SEO team trained to <b>rank your company above your competitors.</b></p>
                     <div className='service-subelements'>
@@ -186,7 +186,7 @@ const ServiceCards = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                         <h2 className='service-header'>SEO</h2>
-                        <h6 className='service-price'>$2,000 <span className='light-text'>/ mo</span></h6>
+                        <p className='service-price'>$2,000 <span className='light-text'>/ mo</span></p>
                 </div>
                 <p className='service-description'>Our Ecommerce specialists design and build high converting websites included with all modern Ecommerce features.</p>
                 <div className='service-subelements'>

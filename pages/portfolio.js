@@ -51,8 +51,8 @@ const portfolio = () => {
       <Nav />
     <div className='portfolio-container'>
       <div className='portfolio-headers'>
-      <h3 className='portfolio-header'>Web projects built to maximize visibility</h3>
-      <h6 className='portfolio-subheader'>Phantom partners with clients to design and develop custom business websites, platforms and experiences. We work with an array of clients, </h6>
+      <h1 className='portfolio-header'>Web projects built to maximize visibility</h1>
+      <h3 className='portfolio-subheader'>Phantom partners with clients to design and develop custom business websites, platforms and experiences. We work with an array of clients, </h3>
       <hr className='portfolio-top-horizontal'></hr>
       {/* <div className='portfolio-partnerships-div'>
         <h6 className='portfolio-clients-splash'>Clients</h6>
@@ -64,10 +64,10 @@ const portfolio = () => {
       <div className='portfolio-grid'>
         <div className='portfolio-item goldshield-portfolio'>
         <div className='portfolio-graphic-container'>
-           <Image className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
+           <img className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
           </div>
           <div className='portfolio-img-container'>
-           <Image className='portfolio-item-img' src='/goldshield-logo.webp' alt='Client Logo' />
+           <img className='portfolio-item-img' src='/goldshield-logo.webp' alt='Client Logo' />
           </div>
           <div className='portfolio-text-container'>
             <p className='portfolio-text-header'>Gold Shield</p>
@@ -85,10 +85,10 @@ const portfolio = () => {
             </div>
           </div> */}
         <div className='portfolio-graphic-container'>
-           <Image className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
+           <img className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
           </div>
         <div className='portfolio-img-container'>
-           <Image className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
+           <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
           </div>
           <div className='portfolio-text-container'>
             <p className='portfolio-text-header'>RANKI</p>
