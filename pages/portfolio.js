@@ -79,11 +79,6 @@ const portfolio = () => {
           </div>
         </div>
         <div className='portfolio-item'>
-          {/* <div className='in-development'>
-            <div className='in-dev-container'>
-            <GoPrimitiveDot className='in-dev-dot'/><p className='in-dev-text'>In Development</p>
-            </div>
-          </div> */}
         <div className='portfolio-graphic-container'>
            <img className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
           </div>
@@ -96,7 +91,12 @@ const portfolio = () => {
           </div>
           <hr className='portfolio-horizontal-line hr-dark'></hr>
           <div className='portfolio-btn-div'>
-          <Link href='/portfolio/goldshield'><button type='button' className='portfolio-item-btn dark-text'>View case study <BsArrowRight className='portfolio-arrow arrow-dark'/></button></Link>
+          {/* <Link href='/portfolio/goldshield'><button type='button' className='portfolio-item-btn dark-text'>View case study <BsArrowRight className='portfolio-arrow arrow-dark'/></button></Link> */}
+          <div className='in-development'>
+            <div className='in-dev-container'>
+            <GoPrimitiveDot className='in-dev-dot'/><p className='in-dev-text'>In Development</p>
+            </div>
+          </div>
           </div>
         </div>
       </div>
