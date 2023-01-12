@@ -64,7 +64,7 @@ const portfolio = () => {
       <div className='portfolio-grid'>
         <div className='portfolio-item goldshield-portfolio'>
         <div className='portfolio-graphic-container'>
-           <img className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
+           <img className='portfolio-item-graphic' src='/goldshield-portfolio.webp' alt='Client Work Portfolio' />
           </div>
           <div className='portfolio-img-container'>
            <img className='portfolio-item-img' src='/goldshield-logo.webp' alt='Client Logo' />
