@@ -145,18 +145,16 @@ export default function BlogPost({ post }) {
           <p className={styles.sharedivp}>Like what you see? Share with a friend!</p>
           </div>
           <div className={styles.sharedivicons}>
-
-            <FacebookShareButton url={`https://phantomdm.com/posts/{post.slug}`} >
+            <FacebookShareButton url={`https://phantomdm.com/posts/${post.slug}`} >
               <FacebookIcon size={32} round className={styles.sharedivicon} />
             </FacebookShareButton>
-
-            <TwitterShareButton url={`https://phantomdm.com/posts/{post.slug}`} >
+            <TwitterShareButton url={`https://phantomdm.com/posts/${post.slug}`} >
               <TwitterIcon size={32} round className={styles.sharedivicon} />
             </TwitterShareButton>
-            <LinkedinShareButton url={`https://phantomdm.com/posts/{post.slug}`} >
+            <LinkedinShareButton url={`https://phantomdm.com/posts/${post.slug}`} >
               <LinkedinIcon size={32} round className={styles.sharedivicon} />
             </LinkedinShareButton>
-            <EmailShareButton url={`https://phantomdm.com/posts/{post.slug}`} >
+            <EmailShareButton url={`https://phantomdm.com/posts/${post.slug}`} >
               <EmailIcon size={32} round className={styles.sharedivicon} />
             </EmailShareButton>
           </div>
