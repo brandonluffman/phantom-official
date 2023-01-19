@@ -185,10 +185,10 @@ const ServiceCards = () => {
                 <p className='service-subheader'>Service</p>
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
-                        <h2 className='service-header'>SEO</h2>
+                        <h2 className='service-header'>Global SEO</h2>
                         <p className='service-price'>$2,000 <span className='light-text'>/ mo</span></p>
                 </div>
-                <p className='service-description'>Our Ecommerce specialists design and build high converting websites included with all modern Ecommerce features.</p>
+                <p className='service-description'>Our SEO specialists will work in a coordinated effort to implement a campaign that will improve your websites search engine rankings.</p>
                 <div className='service-subelements'>
                         <div className='service-subelement'>
                             <TbCircleDot className='subelement-icon'/><p className='service-subelement-name'>On-Page SEO</p>

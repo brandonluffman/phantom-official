@@ -13,7 +13,7 @@ import '../styles/pageloader.css';
 import '../styles/portfolio.css';
 import '../styles/services.css';
 import '../styles/servicecards.css';
-
+import '../styles/four.css';
 
 
 config.autoAddCss = false

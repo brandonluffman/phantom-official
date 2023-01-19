@@ -197,6 +197,10 @@
     object-fit: cover;
     width: 100%;
   }
+  .progress {
+    background-color: rgb(107, 107, 147) !important;
+    z-index:99999 !important;
+  }
 .inputcard {
   border:1px solid rgb(255, 255, 255);
     padding:6rem;

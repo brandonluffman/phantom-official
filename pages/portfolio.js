@@ -52,7 +52,7 @@ const portfolio = () => {
     <div className='portfolio-container'>
       <div className='portfolio-headers'>
       <h1 className='portfolio-header'>Web projects built to maximize visibility</h1>
-      <h3 className='portfolio-subheader'>Phantom partners with clients to design and develop custom business websites, platforms and experiences. We work with an array of clients, </h3>
+      <h3 className='portfolio-subheader'>Phantom partners with clients to develop custom business websites, platforms and experiences that rank on Google. We work with an array of clients, from local businesses to large scale applications.</h3>
       <hr className='portfolio-top-horizontal'></hr>
       {/* <div className='portfolio-partnerships-div'>
         <h6 className='portfolio-clients-splash'>Clients</h6>

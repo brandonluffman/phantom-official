@@ -119,7 +119,7 @@ export default function BlogPost({ post }) {
             <meta name="twitter:creator" content="@USERNAME" />
       </Head>
     <Nav />
-    <ProgressBar />
+    <ProgressBar className={styles.progress}/>
     <div className={styles.slugcontainer}>
       <main className={styles.blog}>
       <div className={styles.waterfall}>

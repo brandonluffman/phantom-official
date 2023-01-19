@@ -18,50 +18,50 @@ import { useAmp } from 'next/amp';
 
 
 
-// const graphcms = new GraphQLClient(
-// "https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
-// );
+const graphcms = new GraphQLClient(
+"https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
+);
 
-// const QUERY = gql`
-//   {
-//     posts {
-//       id
-//       title
-//       description
-//       datePublished
-//       slug
-//       content {
-//         html
-//       }
-//       author {
-//         name
-//         avatar {
-//           url
-//         }
-//       }
-//       coverPhoto {
-//         publishedAt
-//         createdBy {
-//           id
-//         }
-//         url
-//       }
-//       tag {
-//         tagDrop
-//       }
-//     }
-//   }
-// `;
+const QUERY = gql`
+  {
+    posts {
+      id
+      title
+      description
+      datePublished
+      slug
+      content {
+        html
+      }
+      author {
+        name
+        avatar {
+          url
+        }
+      }
+      coverPhoto {
+        publishedAt
+        createdBy {
+          id
+        }
+        url
+      }
+      tag {
+        tagDrop
+      }
+    }
+  }
+`;
 
-// export async function getStaticProps() {
-//   const { posts } = await graphcms.request(QUERY);
-//   return {
-//     props: {
-//       posts,
-//     },
-//     revalidate: 30,
-//   };
-// }
+export async function getStaticProps() {
+  const { posts } = await graphcms.request(QUERY);
+  return {
+    props: {
+      posts,
+    },
+    revalidate: 30,
+  };
+}
 
 
 
@@ -87,8 +87,18 @@ export default function Home({ posts }) {
         `,
         }}
         />
+
     <Head>
           <title>Phantom Technologies | Professional Website Development</title>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://www.phantomdm.com",
+                "logo": "https://www.phantom.com/public/img.png"
+              })}}
+          />
           <meta name="description" content="Phantom Technologies is a website development and design company with extensive experience building websites and web applications."/>
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
@@ -111,8 +121,8 @@ export default function Home({ posts }) {
       <Nav />
         <div className="container-fluid landing-container" id="home">
           <div className="row landing-row">
-            <h2 className="landing-subheader">Phantom Technologies</h2>
-            <h1 className="landing-header">Websites That Convert</h1>
+            <h1 className="landing-subheader">Phantom Technologies | Websites & Local SEO</h1>
+            <h2 className="landing-header">Websites That Convert</h2>
             <div className="landing-btns">
               <Link href='/project'><button className="landing-btn launch-btn">Start a Project</button></Link>
               <a href='#about'><button className="landing-btn learn-btn">About Us</button></a>
@@ -126,6 +136,7 @@ export default function Home({ posts }) {
             <div className="about-content-div">
               <div className='about-imgs-div'>
               <Image src='/img.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" width='300' height='300' />
+              <h4 className='about-img-text'>Phantom Technologies is a website development company that provides the highest-quality digital marketing services for businesses of all sizes. We are committed to helping our clients achieve their goals, and we will work with you until you see results.</h4>
               </div>
               <div className='about-content-text-div'>
                   <p className='about-content-header'>ELEVATE Your Business with Phantom</p>
@@ -146,7 +157,7 @@ export default function Home({ posts }) {
 
         <div className="container-fluid services-container" id="services">
           <div className="row">
-            <h6 className="container-header testimonials-header">Services</h6>
+            <h3 className="container-header testimonials-header">Services</h3>
             
             <div className='portfolio-grid home-services-grid'>
         <div className='portfolio-item goldshield-portfolio'>
@@ -196,7 +207,7 @@ export default function Home({ posts }) {
                         </Link>
                         <Link href='/services/#seo'>
                         <div className='service-subelement home-service-subelement'>
-                        <TbCircleDot className='subelement-icon home-subelement-icon'/><h2 className='service-subelement-name home-subelement-name'>SEO</h2>
+                        <TbCircleDot className='subelement-icon home-subelement-icon'/><h2 className='service-subelement-name home-subelement-name'>Global SEO</h2>
                         </div>
                         </Link>
           </div>
@@ -246,7 +257,7 @@ export default function Home({ posts }) {
         </div>
 
 
-        {/* <div className="container-fluid blog-container" id="blog">
+        <div className="container-fluid blog-container" id="blog">
           <div className="row blog-row">
             <h3 className="container-header testimonials-header">Blog</h3>
             <main className='home-blog'>
@@ -268,7 +279,7 @@ export default function Home({ posts }) {
           <div className='see-more-row'>
           <Link href='/blogs'><p className='blog-btn'>View all blogs  <BsArrowRight /></p></Link>
           </div>
-        </div> */}
+        </div>
 
 
         <div className="container-fluid contact-container" id="contact">

@@ -108,7 +108,7 @@ a {
 
 .landing-subheader {
     color:rgb(100, 100, 100);
-    font-size:5rem;
+    font-size:3rem !important;
     font-weight:200;
     margin-bottom:2rem !important;
     z-index:99 !important;
@@ -206,7 +206,7 @@ a {
     }
 
     .landing-subheader {
-        font-size:3rem;
+        font-size:2rem;
     }
  
 
@@ -240,6 +240,7 @@ a {
  
     .landing-header {
         font-size: 8rem;
+        line-height: 9.5vh;
     }
     .landing-btn {
         font-size: 2rem;
@@ -248,7 +249,7 @@ a {
         padding-top:4rem;
     }
     .landing-subheader {
-        font-size:2.5rem;
+        font-size:1.5rem;
     }
  }
 
@@ -287,6 +288,7 @@ a {
     width:40%;
     justify-content: center;
     text-align: left;
+    padding-right:10rem;
 }
 .about-brand-img {
     width:20%;
@@ -295,6 +297,10 @@ a {
     left:150px;
 }
 
+.about-img-text {
+    font-size: 2rem;
+    margin-top:3rem;
+}
 .about-content-header {
     font-size:3.5rem;
     margin-bottom:2rem;
@@ -378,7 +384,11 @@ a {
         justify-content: center;
         text-align: center;
     }
-
+    .about-imgs-div {
+        padding-right:0rem;
+        margin-bottom:5rem;
+        padding:0rem 2rem;
+    }
  }
 
  @media only screen and (max-width: 760px) {
