@@ -14,6 +14,12 @@ import '../styles/portfolio.css';
 import '../styles/services.css';
 import '../styles/servicecards.css';
 import '../styles/four.css';
+import '../styles/about.css';
+import '../styles/goldshield.css';
+import '../styles/seo.css';
+import '../styles/webdevelopment.css';
+import '../styles/webservices.css';
+import '../styles/localseo.css';
 
 
 config.autoAddCss = false

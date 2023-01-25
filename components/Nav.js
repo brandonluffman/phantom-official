@@ -60,7 +60,7 @@ function Nav() {
             Home
           </li>
           </Link>
-          <Link href='/#about' className="nav-link">
+          <Link href='/about' className="nav-link">
           <li className="nav-item" onClick={toggleNav}>
               About
           </li>

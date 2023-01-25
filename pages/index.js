@@ -15,53 +15,50 @@ import { BsArrowRight } from 'react-icons/bs';
 import { TbCircleDot } from 'react-icons/tb';
 import { useAmp } from 'next/amp';
 
+// const graphcms = new GraphQLClient(
+// "https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
+// );
 
+// const QUERY = gql`
+//   {
+//     posts {
+//       id
+//       title
+//       description
+//       datePublished
+//       slug
+//       content {
+//         html
+//       }
+//       author {
+//         name
+//         avatar {
+//           url
+//         }
+//       }
+//       coverPhoto {
+//         publishedAt
+//         createdBy {
+//           id
+//         }
+//         url
+//       }
+//       tag {
+//         tagDrop
+//       }
+//     }
+//   }
+// `;
 
-
-const graphcms = new GraphQLClient(
-"https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
-);
-
-const QUERY = gql`
-  {
-    posts {
-      id
-      title
-      description
-      datePublished
-      slug
-      content {
-        html
-      }
-      author {
-        name
-        avatar {
-          url
-        }
-      }
-      coverPhoto {
-        publishedAt
-        createdBy {
-          id
-        }
-        url
-      }
-      tag {
-        tagDrop
-      }
-    }
-  }
-`;
-
-export async function getStaticProps() {
-  const { posts } = await graphcms.request(QUERY);
-  return {
-    props: {
-      posts,
-    },
-    revalidate: 30,
-  };
-}
+// export async function getStaticProps() {
+//   const { posts } = await graphcms.request(QUERY);
+//   return {
+//     props: {
+//       posts,
+//     },
+//     revalidate: 30,
+//   };
+// }
 
 
 
@@ -99,7 +96,7 @@ export default function Home({ posts }) {
                 "logo": "https://www.phantom.com/public/img.png"
               })}}
           />
-          <meta name="description" content="Phantom Technologies is a website development and design company with extensive experience building websites and web applications."/>
+          <meta name="description" content="Phantom Technologies is a website development and company with extensive experience building websites that rank on Google."/>
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -223,31 +220,37 @@ export default function Home({ posts }) {
               <div className='development-phases'>
                 <div className='dev-phase'>
                 <p className='phase-header'>Phase 1</p>
+                <hr className='phaser-hr'></hr>
                 <p className='dev-phase-name'>Research & Analysis</p>
                 <MdAnalytics className='phase-icon' />
                 </div>
                 <div className='dev-phase'>
                 <p className='phase-header'>Phase 2</p>
+                <hr className='phaser-hr'></hr>
                 <p className='dev-phase-name'>Planning & Strategy</p>
                 <SiMicrostrategy className='phase-icon' />
                 </div>
                 <div className='dev-phase'>
                 <p className='phase-header'>Phase 3</p>
+                <hr className='phaser-hr'></hr>
                 <p className='dev-phase-name'>Design</p>
                 <MdDraw className='phase-icon' />
                 </div>
                 <div className='dev-phase'>
                 <p className='phase-header'>Phase 4</p>
+                <hr className='phaser-hr'></hr>
                 <p className='dev-phase-name'>Development</p>
                 <MdDeveloperMode className='phase-icon' />
                 </div>
                 <div className='dev-phase'>
                 <p className='phase-header'>Phase 5</p>
+                <hr className='phaser-hr'></hr>
                 <p className='dev-phase-name'>Testing</p>
                 <MdOutlineSpeed className='phase-icon' />
                 </div>
                 <div className='dev-phase'>
                 <p className='phase-header'>Phase 6</p>
+                <hr className='phaser-hr'></hr>
                 <p className='dev-phase-name'>Deployment</p>
                 <GrDeploy className='phase-icon' />
                 </div>
@@ -257,7 +260,7 @@ export default function Home({ posts }) {
         </div>
 
 
-        <div className="container-fluid blog-container" id="blog">
+        {/* <div className="container-fluid blog-container" id="blog">
           <div className="row blog-row">
             <h3 className="container-header testimonials-header">Blog</h3>
             <main className='home-blog'>
@@ -279,7 +282,7 @@ export default function Home({ posts }) {
           <div className='see-more-row'>
           <Link href='/blogs'><p className='blog-btn'>View all blogs  <BsArrowRight /></p></Link>
           </div>
-        </div>
+        </div> */}
 
 
         <div className="container-fluid contact-container" id="contact">

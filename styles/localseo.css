@@ -1,0 +1,37 @@
+.local-seo-landing {
+    height:100vh;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-bottom:4rem;
+    padding-left:8rem;
+  /* Set a specific height */
+  min-height: 500px;
+  background-image: url('/localseo.png');
+    color:black;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center right 100px;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  border-bottom:1px solid white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .local-seo-landing {
+      padding:0rem 1rem;
+      background-size: 60%;
+      background-position: center top 100px;
+      padding-top:20rem;
+  }
+  .seo-landing-header {
+      text-align: left;
+      font-size: 7rem;
+  }
+
+
+}

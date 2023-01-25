@@ -10,50 +10,50 @@ import Head from 'next/head';
 import Script from 'next/script';
 
 
-const graphcms = new GraphQLClient(
-    "https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
-    );
+// const graphcms = new GraphQLClient(
+//     "https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
+//     );
     
-    const QUERY = gql`
-      {
-        posts {
-          id
-          title
-          description
-          datePublished
-          slug
-          content {
-            html
-          }
-          author {
-            name
-            avatar {
-              url
-            }
-          }
-          coverPhoto {
-            publishedAt
-            createdBy {
-              id
-            }
-            url
-          }
-          tag {
-            tagDrop
-          }
-        }
-      }
-    `;
+//     const QUERY = gql`
+//       {
+//         posts {
+//           id
+//           title
+//           description
+//           datePublished
+//           slug
+//           content {
+//             html
+//           }
+//           author {
+//             name
+//             avatar {
+//               url
+//             }
+//           }
+//           coverPhoto {
+//             publishedAt
+//             createdBy {
+//               id
+//             }
+//             url
+//           }
+//           tag {
+//             tagDrop
+//           }
+//         }
+//       }
+//     `;
     
-    export async function getStaticProps() {
-      const { posts } = await graphcms.request(QUERY);
-      return {
-        props: {
-          posts,
-        },
-        revalidate: 30,
-      };
-    }
+//     export async function getStaticProps() {
+//       const { posts } = await graphcms.request(QUERY);
+//       return {
+//         props: {
+//           posts,
+//         },
+//         revalidate: 30,
+//       };
+//     }
 
     
 
@@ -103,8 +103,10 @@ const Blogs = ({ posts }) => {
 
     <div className='blogs-container'>
       <h3 className='blogs-header'>Blogs</h3>
-      {/* <h5 className='blog-upcoming'>Blog Coming Soon!</h5> */}
-      <main className='blogs-main'> 
+      <div className='blogs-div'>
+      <h5 className='blog-upcoming'>Blog Coming Soon!</h5>
+      </div>
+      {/* <main className='blogs-main'> 
       {posts.map((post) => (
         <BlogCard
           title={post.title}
@@ -118,7 +120,7 @@ const Blogs = ({ posts }) => {
           className='blogs-blog-card'
         />
       ))}
-    </main>
+    </main> */}
     </div>
 
     <Footer />
