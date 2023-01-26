@@ -10,6 +10,7 @@ import WebServices from '../../components/WebServices'
 import { MdAnalytics, MdDraw,MdDeveloperMode, MdOutlineSpeed } from 'react-icons/md'
 import { SiMicrostrategy } from 'react-icons/si'
 import { GrDeploy } from 'react-icons/gr'
+import Link from 'next/link';
 
 const webdevelopment = () => {
   return (
@@ -185,7 +186,7 @@ const webdevelopment = () => {
         <div className='ready-div'>
         <div className='ready-container'>
         <p className='ready-header'>Ready To Start A Project?</p>
-        <button className='ready-btn' type='button'>Start Here<BsArrowRight className='arrow-icon book-arrow' /></button>
+        <Link href='/project'><button className='ready-btn' type='button'>Start Here<BsArrowRight className='arrow-icon book-arrow' /></button></Link>
         </div>
       </div>
       </div>

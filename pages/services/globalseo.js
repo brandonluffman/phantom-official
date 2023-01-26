@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import Nav from '../../components/Nav'
 import {BsArrowRight} from 'react-icons/bs'
 import { GoPrimitiveDot } from 'react-icons/go'
+import Link from 'next/link';
 
 
 const globalseo = () => {
@@ -225,7 +226,7 @@ Monthly reporting for SEO helps businesses and website owners to keep track of t
       <div className='ready-div'>
         <div className='ready-container'>
         <p className='ready-header'>Ready To Start A Campaign?</p>
-        <button className='ready-btn' type='button'>Let&apos;s get started<BsArrowRight className='arrow-icon book-arrow' /></button>
+        <Link href='/project'><button className='ready-btn' type='button'>Let&apos;s get started<BsArrowRight className='arrow-icon book-arrow' /></button></Link>
         </div>
       </div>
       </div>
