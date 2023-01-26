@@ -170,6 +170,7 @@ svg path {
         display: block;
         height:auto;
         max-height: none;
+        padding-bottom:3rem;
     }
     .service-content {
         width:100%;
