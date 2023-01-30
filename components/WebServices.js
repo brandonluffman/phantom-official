@@ -16,7 +16,7 @@ const WebServices = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                 <h2 className='service-header'>Business Websites</h2>
-                        <p className='service-price'>$1,500 <span className='light-text'></span></p>
+                        {/* <p className='service-price'>$1,500 <span className='light-text'></span></p> */}
                 </div>
                 <p className='service-description'>User-centered design that boosts lead generation and increases revenue.</p>
                 <div className='service-subelements'>
@@ -46,7 +46,7 @@ const WebServices = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                 <h2 className='service-header'>Ecommerce Websites</h2>
-                        <p className='service-price'>$10,000 <span className='light-text'></span></p>
+                        {/* <p className='service-price'>$10,000 <span className='light-text'></span></p> */}
                 </div>
                 <p className='service-description'>Our Ecommerce specialists design and build high converting websites included with all modern Ecommerce features.</p>
                 <div className='service-subelements'>
@@ -82,7 +82,7 @@ const WebServices = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                 <h2 className='service-header'>Custom Websites</h2>
-                        <p className='service-price'>$2,000 <span className='light-text'></span></p>
+                        {/* <p className='service-price'>$2,000 <span className='light-text'></span></p> */}
                 </div>
                 <p className='service-description'>Have a design in mind? Our developers will work effortlessly to provide you with a website fit to your specifications.</p>
                 <div className='service-subelements'>
@@ -112,7 +112,7 @@ const WebServices = () => {
                 <hr className='service-hr'></hr>
                 <div className='service-pricing'>
                 <h2 className='service-header'>Web Applications</h2>
-                        <p className='service-price'>$25,000<span className='dark-text'>+</span></p>
+                        {/* <p className='service-price'>$25,000<span className='dark-text'>+</span></p> */}
                 </div>
                 <p className='service-description'>Our Web App Development team builds full-stack web and front-end applications using modern tech stacks for innovative tech brands and companies.</p>
                 <div className='service-subelements'>
