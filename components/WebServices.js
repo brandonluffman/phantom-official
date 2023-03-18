@@ -14,7 +14,7 @@ const WebServices = () => {
                 <div className='service-content'>
                 <p className='service-subheader'>Service</p>
                 <hr className='service-hr'></hr>
-                <div className='service-pricing'>
+               <div className='service-pricing'>
                 <h2 className='service-header'>Business Websites</h2>
                         {/* <p className='service-price'>$1,500 <span className='light-text'></span></p> */}
                 </div>
