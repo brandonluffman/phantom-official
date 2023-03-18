@@ -94,7 +94,7 @@ const portfolio = () => {
           {/* <Link href='/portfolio/goldshield'><button type='button' className='portfolio-item-btn dark-text'>View case study <BsArrowRight className='portfolio-arrow arrow-dark'/></button></Link> */}
           <div className='in-development'>
             <div className='in-dev-container'>
-            <GoPrimitiveDot className='in-dev-dot'/><p className='in-dev-text'>In Development</p>
+            <a href="https://ranki.ai/" target='_blank' rel='noreferrer' className='portfolio-link'><GoPrimitiveDot className='in-dev-dot'/><p className='in-dev-text'>In Development</p></a>
             </div>
           </div>
           </div>
