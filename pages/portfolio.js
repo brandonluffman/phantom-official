@@ -51,8 +51,8 @@ const portfolio = () => {
       <Nav />
     <div className='portfolio-container'>
       <div className='portfolio-headers'>
-      <h1 className='portfolio-header'>Web projects built to maximize visibility</h1>
-      <h3 className='portfolio-subheader'>Phantom partners with clients to develop custom business websites, platforms and experiences that rank on Google. We work with an array of clients, from local businesses to large scale applications.</h3>
+      <h1 className='portfolio-header'>AI Projects Built with Purpose</h1>
+      <h3 className='portfolio-subheader'>Phantom partners with clients to develop custom business solutions using Artificial Intelligence. We work with an array of clients, focused on developing solutions that maximize revenue and increase operational efficiency.</h3>
       <hr className='portfolio-top-horizontal'></hr>
       {/* <div className='portfolio-partnerships-div'>
         <h6 className='portfolio-clients-splash'>Clients</h6>
@@ -62,7 +62,7 @@ const portfolio = () => {
       </div> */}
       </div>
       <div className='portfolio-grid'>
-        <div className='portfolio-item goldshield-portfolio'>
+        {/* <div className='portfolio-item goldshield-portfolio'>
         <div className='portfolio-graphic-container'>
            <img className='portfolio-item-graphic' src='/goldshield-portfolio.webp' alt='Client Work Portfolio' />
           </div>
@@ -77,6 +77,22 @@ const portfolio = () => {
           <div className='portfolio-btn-div'>
           <a href="https://goldshield.vercel.app" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>View case study <BsArrowRight className='portfolio-arrow'/></button></a>
           </div>
+        </div> */}
+          <div className='portfolio-item goldshield-portfolio'>
+            <div className='portfolio-graphic-container'>
+            <img className='portfolio-item-graphic' src='/analysis.png' alt='Client Work Portfolio' />
+            </div>
+            <div className='portfolio-img-container'>
+            <img className='portfolio-item-img' src='/logo-black.png' alt='Client Logo' />
+            </div>
+            <div className='portfolio-text-container'>
+              <p className='portfolio-text-header'>JOOS.AI</p>
+              <p className='portfolio-text-content'>AI Powered Investment Analytics </p>
+            </div>
+            <hr className='portfolio-horizontal-line'></hr>
+            <div className='portfolio-btn-div'>
+            <a href="https://goldshield.vercel.app" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
+            </div>
         </div>
         <div className='portfolio-item'>
         <div className='portfolio-graphic-container'>
@@ -86,7 +102,7 @@ const portfolio = () => {
            <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
           </div>
           <div className='portfolio-text-container'>
-            <p className='portfolio-text-header'>RANKI</p>
+            <p className='portfolio-text-header'>RANKI AI</p>
             <p className='portfolio-text-content'>Web App focused on centralizing all aspects of a customers product search to make the product search process more efficient.</p>
           </div>
           <hr className='portfolio-horizontal-line hr-dark'></hr>

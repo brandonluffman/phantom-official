@@ -53,8 +53,8 @@ const about = () => {
       <div className='about-page-container'>
         <div className='about-landing'>
           <div className='about-landing-headers'>
-          <h2 className='about-landing-subheader'>Phantom Technologies</h2>
-          <h1 className='about-landing-header'>Websites Built To <span className='rank-color'>Rank</span></h1>
+          <h2 className='about-landing-subheader'>PhantomAI</h2>
+          <h1 className='about-landing-header'>AI <span className='rank-color'>Automation</span></h1>
           </div>
         </div>
         <div className='about-who'>
@@ -63,7 +63,7 @@ const about = () => {
             <div className='who-link'>
               <h2 className='who-header'>Who We Are</h2>
               <hr className='about-page-hr'></hr>
-              <p className='who-desc'>Phantom Technologies is a website development company headquartered in Arlington, VA that provides the highest-quality digital marketing services for businesses of all sizes. We are committed to helping our clients achieve their goals, and we will work with you until you see results. Our team is made up of experts who have years of experience in digital marketing, web development, and project management. We have seen what works and what doesn&apos;t on the web, so we know how to help you reach your target audience. Our mission is to make sure that your business succeeds online.</p>
+              <p className='who-desc'>PhantomAI is an AI Development Firm headquartered in Arlington, VA that provides the highest-quality Artifical Intelligence solutions to businesses of all sizes. We are committed to helping our clients achieve their goals, and we will work with you until you see results. Our team is made up of experts who have years of experience in software development, data engineering, and machine learning. We have seen what works and what doesn&apos;t for companies, so we know how to help you reach your target audience. Our mission is to make sure that your business exceeds it&apos;s goals.</p>
             </div>
             {/* <div className='who-link'>
               <h2 className='who-header'>Who We Are</h2>
@@ -79,15 +79,15 @@ const about = () => {
             <div className='about-middle-icons'>
               <div>
               <FaConnectdevelop className='about-middle-icon'/>
-              <h2>Web Development</h2>
+              <h2>Big Data Allocation</h2>
               </div>
               <div>
                 <AiOutlineGlobal className='about-middle-icon'/>
-              <h2>Global SEO</h2>
+              <h2>Custom AI Solutions</h2>
               </div>
               <div>
                 <FaMapPin className='about-middle-icon'/>
-              <h2>Local SEO</h2>
+              <h2>API Development</h2>
               </div>
             </div>
         </div>
@@ -96,7 +96,7 @@ const about = () => {
             <div className='who-link'>
               <h2 className='who-header'>What We Do</h2>
               <hr className='about-page-hr'></hr>
-              <p className='who-desc'>At Phantom we offer Local SEO, Global SEO, and Website Development solutions to help your business grow. Our team is made up of industry experts who know how to get results. Our process starts with a consultation where we will discuss your needs and goals for your website or online presence. We&apos;ll then work with you to develop a plan that meets those goals and fits within your budget constraints. Then we get to work! Our team will monitor analytics and track progress along the way, so you can see the impact of our efforts as they happen in real time.</p>
+              <p className='who-desc'>At Phantom we offer AI Development solutions to help your business grow. Our team is made up of industry experts who know how to get results. Our process starts with a consultation where we will discuss your needs and goals. We&apos;ll then work with you to develop a plan that meets those goals and fits within your budget constraints. Then we get to work! Our team will monitor analytics and track progress along the way, so you can see the impact of our efforts as they happen in real time.</p>
             </div>
             {/* <div className='who-link'>
               <h2 className='who-header'>What We Do</h2>
@@ -109,8 +109,8 @@ const about = () => {
         </div>
         <div className='about-we'>
           <div className='we-div'>
-          <h2 className='we-header'>Websites Built to <span className='we-color'>Dominate</span> the Competition</h2>
-          <p className='we-desc'>Our team is here to help you achieve your goals. We&apos;re a group of marketers and web developers who believe in the power of websites and digital marketing to bring companies together with their target audiences. We also believe in the importance of building long-term relationships with our clients—not just delivering results but also providing ongoing support as your business grows and changes over time.</p>
+          <h2 className='we-header'>Solutions Built to <span className='we-color'>Dominate</span> the Competition</h2>
+          <p className='we-desc'>Our team is here to help you achieve your goals. We&apos;re a group of developers who believe in the power of AI and it&apos;s ability to bring companies to their financial goals. We also believe in the importance of building long-term relationships with our clients—not just delivering results but also providing ongoing support as your business grows and changes over time.</p>
           <button type='button' className='we-btn'>Let&apos;s get started <BsArrowRight /></button>
           </div>
         </div>

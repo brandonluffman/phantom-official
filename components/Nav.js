@@ -45,11 +45,13 @@ function Nav() {
       <nav className={navbar ? 'scroll fixed-top' : 'navbar fixed-top'} id="navbar">
         <Link href="/" className="nav-logo">
           <div className="brand-img" id="brand-img">
-            <Image src='/img.png' alt="Brand Logo" id='nav-brand-img' loading="lazy" width='100' height='100' />
+          <img src='/ghost-logo.png' width='30' className="absolute-ghost"></img>
+            <img src='/modern-logo.png' alt="Brand Logo" id='nav-brand-img' />
           </div>
         </Link>
         <div className="nav-buttons">
           {/* <button className="nav-lang-btn" type='button'>En</button> */}
+          {/* <Link href='/project'><button className='nav-contact-btn' type='button'><img src='/ranki-transp-logo.png' width='20'></img>RankiAI <span className='beta-tag'>Beta</span></button></Link> */}
           <Link href='/project'><button className='nav-contact-btn' type='button'>Get in contact</button></Link>
           {isActive? <MdClear className='hamburger-btn' onClick={toggleNav}/>:<MdMenu className='hamburger-btn' onClick={toggleNav} />}
         </div>
@@ -65,11 +67,11 @@ function Nav() {
               About
           </li>
           </Link>
-          <Link href='/services' className="nav-link">
+          {/* <Link href='/services' className="nav-link">
           <li className="nav-item" onClick={toggleNav}>
               Services
           </li>
-          </Link>
+          </Link> */}
           <Link href='/portfolio' className="nav-link">
           <li className="nav-item" onClick={toggleNav}>
               Portfolio
@@ -87,7 +89,7 @@ function Nav() {
           </Link>
           <li className="nav-item">
           <div className="dropdown-brand-div">
-            <Image className='dropdown-brand-img' src='/img.png' alt='Brand Logo' height='100' width='100' />
+            <Image className='dropdown-brand-img' src='/ghost-logo.png' alt='Brand Logo' height='65' width='50' />
           </div>
           </li>
         </ul>

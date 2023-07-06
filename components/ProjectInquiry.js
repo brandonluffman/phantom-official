@@ -55,17 +55,17 @@ const ProjectInquiry = () => {
         <p className='project-subheader'>I&apos;m interested in... *</p>
         <div className='form-app-selection'>
                 <input id='select-1' type="radio" value="Business Website" className="radio-input" name="interest" />
-                <label className='radio-label' htmlFor='select-1'>Business Website</label>
+                <label className='radio-label' htmlFor='select-1'>Custom Chatbot</label>
                 <input id='select-2' type="radio" name="interest" value="Custom Website" className="radio-input"/>
-                <label className='radio-label' htmlFor='select-2'>Custom Website</label>
+                <label className='radio-label' htmlFor='select-2'>Custom AI Application</label>
                 <input id='select-3' type="radio" name="interest" value="Ecommerce Website" className="radio-input"/>
-                <label className='radio-label' htmlFor='select-3'>Ecommerce Website</label>
+                <label className='radio-label' htmlFor='select-3'>API Development</label>
                 <input id='select-4' type="radio" name="interest" value="Web App" className="radio-input"/>
-                <label className='radio-label' htmlFor='select-4'>Web App</label>
+                <label className='radio-label' htmlFor='select-4'>Data Allocation</label>
                 <input id='select-5' type="radio" name="interest" value="Local SEO" className="radio-input"/>
-                <label className='radio-label' htmlFor='select-5'>Local SEO</label>
-                <input id='select-6' type="radio" name="interest" value="SEO" className="radio-input"/>
-                <label className='radio-label' htmlFor='select-6'>SEO</label>
+                <label className='radio-label' htmlFor='select-5'>Other</label>
+                {/* <input id='select-6' type="radio" name="interest" value="SEO" className="radio-input"/>
+                <label className='radio-label' htmlFor='select-6'>SEO</label> */}
         </div>
         <div className='form-inputs'>
                 <input type='text' placeholder='Your name *' className='form-input' name="name" required/><br></br>

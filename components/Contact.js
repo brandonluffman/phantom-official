@@ -68,7 +68,7 @@ const Contact = () => {
         <p className="contact-sides-header">Get in touch!</p>
         <div className="contact-info">
         <p className="contact-info-item"><GoMail className="contact-icon" /><a mailto='chris@goldshield.co'>info@phantomdm.com</a></p>
-        <p className="contact-info-item"><IoIosPhonePortrait className="contact-icon" />(203) 822-2311</p>
+        {/* <p className="contact-info-item"><IoIosPhonePortrait className="contact-icon" />(203) 822-2311</p> */}
         <p className="contact-info-item"><TfiLocationPin className="contact-icon" /> Arlington, VA</p>
         </div>
         <p className="contact-book-text">Looking to start a project?</p>

@@ -12,7 +12,8 @@ const Footer = () => {
            <div className='footer-top'>
             <div className='footer-brand-container'>
               <div className='footer-brand-img'>
-                  <img src='/img.png' alt="Brand Logo" className='footer-brand-logo' loading="lazy" />
+                  <img src='/ghost-logo.png' className='footer-brand-ghost'></img>
+                  <img src='/modern-logo.png' alt="Brand Logo" className='footer-brand-logo' loading="lazy" />
               </div>
               
               <div className='social-icons'>
@@ -25,10 +26,10 @@ const Footer = () => {
               
               <div className='footer-links-container'>
                           <div className='footer-links'>
-                            <div className='footer-links-header'><p className='footer-link-header'>Phantom</p></div>
+                            <div className='footer-links-header'><p className='footer-link-header'>PhantomAI</p></div>
                             <Link href='/'><div className='footer-link'>Home</div></Link>
                             <Link href='/#about'><div className='footer-link'>About</div></Link>
-                            <Link href='/services'><div className='footer-link'>Services</div></Link>
+                            {/* <Link href='/services'><div className='footer-link'>Services</div></Link> */}
                             <Link href='/locations'><div className='footer-link'>Portfolio</div></Link>
                             <Link href='/blogs'><div className='footer-link'>Blog</div></Link>
                             <Link href='/project'><div className='footer-link'>Contact Us</div></Link>
@@ -42,12 +43,12 @@ const Footer = () => {
                           <div className='footer-links contact-links'>
                             <p className='footer-links-header'>Contact</p>
                             <p className='footer-link'><GoMail className='footer-contact-icon' /> info@phantomdm.com</p>
-                            <p className='footer-link'><IoIosPhonePortrait className='footer-contact-icon' /> (203) 822-2311</p>
+                            {/* <p className='footer-link'><IoIosPhonePortrait className='footer-contact-icon' /> (203) 822-2311</p> */}
                           </div>
                 </div>
               </div>   
               <div className='copyright-footer'>
-                  <p className='footer-copyright-content'>Copyright © {new Date().getFullYear()} Phantom Technologies - All Rights Reserved.</p>
+                  <p className='footer-copyright-content'>Copyright © {new Date().getFullYear()} PhantomAI - All Rights Reserved.</p>
               </div>
       </div>
     </footer>

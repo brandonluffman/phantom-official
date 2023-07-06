@@ -8,7 +8,7 @@
     justify-content: center;
     text-align: left;
     align-items: center;
-    background: linear-gradient(40deg, rgba(240,240,240,1) 60%, #92d7ff 100%);
+    /* background: linear-gradient(40deg, rgba(240,240,240,1) 60%, #92d7ff 100%); */
     padding-bottom: 4rem;
     padding: 0rem 3rem 4rem 3rem;
 }
@@ -72,7 +72,7 @@
     overflow-y: hidden;
     height:auto;
     padding:4rem 0rem;
-
+    margin-bottom:4rem;
 }
 .we-div {
     text-align: center;

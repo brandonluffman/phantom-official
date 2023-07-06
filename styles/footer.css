@@ -51,8 +51,8 @@ padding:0rem 0.2rem;
 }
 
 .footer-brand-logo {
-    width:150px;
-    height:150px;
+    width:250px;
+    /* height:150px; */
     margin-bottom:2rem;
 }
 
@@ -101,6 +101,13 @@ Link {
 
 .service-subelement > svg > path {
     stroke:none !important;
+}
+.footer-brand-ghost {
+    width:40px;
+    margin-right:-40px;
+    z-index: 9999;
+    position: relative;
+    padding-bottom:1.1rem;
 }
 
 @media only screen and (max-width: 1000px) {

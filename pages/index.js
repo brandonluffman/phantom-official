@@ -86,7 +86,7 @@ export default function Home({ posts }) {
         />
 
     <Head>
-          <title>Phantom Technologies | AI Driven Applications</title>
+          <title>PhantomAI | AI Driven Applications</title>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -118,11 +118,11 @@ export default function Home({ posts }) {
       <Nav />
         <div className="container-fluid landing-container" id="home">
           <div className="row landing-row">
-            <h1 className="landing-subheader">Phantom Technologies</h1>
+            <h1 className="landing-subheader">PhantomAI</h1>
             <h2 className="landing-header">AI Driven Applications</h2>
             <div className="landing-btns">
               <Link href='/project'><button className="landing-btn launch-btn">Start a Project</button></Link>
-              <a href='#about'><button className="landing-btn learn-btn">About Us</button></a>
+              <Link href='/portfolio'><button className="landing-btn learn-btn">View Our Portfolio</button></Link>
             </div>
           </div>
         </div>
@@ -132,11 +132,11 @@ export default function Home({ posts }) {
             <h3 className="container-header about-header">About Us</h3>
             <div className="about-content-div">
               <div className='about-imgs-div'>
-              <Image src='/img.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" width='300' height='300' />
-              <h4 className='about-img-text'>Phantom Technologies is a world-class AI firm with deep domain expertise in building scalable, highly-responsive solutions. We employ an agile methodology and work closely with clients to ensure their success.</h4>
+              <Image src='/ghost-logo.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" width='75' height='100' />
+              <h4 className='about-img-text'>PhantomAI is a world-class AI firm with deep domain expertise in building scalable, highly-responsive solutions. We employ an agile methodology and work closely with clients to ensure their success.</h4>
               </div>
               <div className='about-content-text-div'>
-                  <p className='about-content-header'>ELEVATE Your Business with Phantom</p>
+                  <p className='about-content-header'>ELEVATE Your Business with PhantomAI</p>
                   <h3 className='about-content-p'>We are a team of experts who can help you develop, implement, and deploy AI-powered tools.</h3>
                   <hr className='about-content-line'></hr>
                    <div className='web-imgs-div'>
@@ -152,7 +152,7 @@ export default function Home({ posts }) {
         </div>
 
 
-        <div className="container-fluid services-container" id="services">
+        {/* <div className="container-fluid services-container" id="services">
           <div className="row">
             <h3 className="container-header testimonials-header">Services</h3>
             
@@ -213,9 +213,9 @@ export default function Home({ posts }) {
           <Link href='/services/#seo'><button type='button' className='portfolio-item-btn'><span className='dark-text'>Learn more </span><BsArrowRight className='portfolio-arrow arrow-dark'/></button></Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
-            <div className='service-attributes'>
+            {/* <div className='service-attributes'>
               <p className='serv-attributes-header'>Our Development Process</p>
               <div className='development-phases'>
                 <div className='dev-phase'>
@@ -257,7 +257,7 @@ export default function Home({ posts }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
         {/* <div className="container-fluid blog-container" id="blog">
