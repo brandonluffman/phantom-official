@@ -69,7 +69,7 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-W3Q83E2JE3"/>
+      {/* <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-W3Q83E2JE3"/>
         <Script
         id='google-analytics'
         strategy="afterInteractive"
@@ -83,7 +83,7 @@ export default function Home({ posts }) {
         });
         `,
         }}
-        />
+        /> */}
 
     <Head>
           <title>Phantom | AI Driven Applications</title>
