@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='footer-brand-container'>
               <div className='footer-brand-img'>
                   <img src='/ghost-logo.png' className='footer-brand-ghost'></img>
-                  <img src='/modern-logo.png' alt="Brand Logo" className='footer-brand-logo' loading="lazy" />
+                  <img src='/logo-transparent.png' alt="Brand Logo" className='footer-brand-logo' loading="lazy" />
               </div>
               
               <div className='social-icons'>
@@ -26,7 +26,7 @@ const Footer = () => {
               
               <div className='footer-links-container'>
                           <div className='footer-links'>
-                            <div className='footer-links-header'><p className='footer-link-header'>PhantomAI</p></div>
+                            <div className='footer-links-header'><p className='footer-link-header'>Phantom</p></div>
                             <Link href='/'><div className='footer-link'>Home</div></Link>
                             <Link href='/#about'><div className='footer-link'>About</div></Link>
                             {/* <Link href='/services'><div className='footer-link'>Services</div></Link> */}
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
               </div>   
               <div className='copyright-footer'>
-                  <p className='footer-copyright-content'>Copyright © {new Date().getFullYear()} PhantomAI - All Rights Reserved.</p>
+                  <p className='footer-copyright-content'>Copyright © {new Date().getFullYear()} Phantom - All Rights Reserved.</p>
               </div>
       </div>
     </footer>

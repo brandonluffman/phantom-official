@@ -26,6 +26,7 @@ config.autoAddCss = false
 import { useState, useEffect } from "react"
 import Router from "next/router"
 import PageLoader from "../components/PageLoader"
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
   
 const MyApp = ({ Component, pageProps, router }) => {
@@ -47,7 +48,12 @@ const MyApp = ({ Component, pageProps, router }) => {
         Router.events.off("routeChangeError", end)
       }
     }, [])
-    return loading ? <PageLoader /> : <Component {...pageProps} />  
+    return (
+      <>
+        <GoogleAnalytics />
+        {loading ? <PageLoader /> : <Component {...pageProps} />}
+      </>
+    ) 
 }
 
 export default MyApp

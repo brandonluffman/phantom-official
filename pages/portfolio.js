@@ -28,7 +28,7 @@ const portfolio = () => {
                 }}
             />
        <Head>
-          <title>Phantom Technologies | Portfolio</title>
+          <title>Phantom | Portfolio</title>
           <meta name="description" content="Take a look at some work we did for our clients."/>
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
@@ -54,12 +54,6 @@ const portfolio = () => {
       <h1 className='portfolio-header'>AI Projects Built with Purpose</h1>
       <h3 className='portfolio-subheader'>Phantom partners with clients to develop custom business solutions using Artificial Intelligence. We work with an array of clients, focused on developing solutions that maximize revenue and increase operational efficiency.</h3>
       <hr className='portfolio-top-horizontal'></hr>
-      {/* <div className='portfolio-partnerships-div'>
-        <h6 className='portfolio-clients-splash'>Clients</h6>
-        </div>
-        <div className='portfolio-clients-div'>
-        <h6 className='portfolio-partnerships'>Partnerships</h6>
-      </div> */}
       </div>
       <div className='portfolio-grid'>
         {/* <div className='portfolio-item goldshield-portfolio'>
@@ -80,41 +74,72 @@ const portfolio = () => {
         </div> */}
           <div className='portfolio-item goldshield-portfolio'>
             <div className='portfolio-graphic-container'>
-            <img className='portfolio-item-graphic' src='/analysis.png' alt='Client Work Portfolio' />
+            <img className='portfolio-item-graphic' src='/resumebuilder-min.png' alt='Client Work Portfolio' />
             </div>
             <div className='portfolio-img-container'>
-            <img className='portfolio-item-img' src='/logo-black.png' alt='Client Logo' />
+            <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
             </div>
             <div className='portfolio-text-container'>
-              <p className='portfolio-text-header'>JOOS.AI</p>
+              <p className='portfolio-text-header'>ResumeBuilderAI</p>
               <p className='portfolio-text-content'>AI Powered Investment Analytics </p>
             </div>
             <hr className='portfolio-horizontal-line'></hr>
             <div className='portfolio-btn-div'>
-            <a href="https://goldshield.vercel.app" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
+            <a href="https://theresumebuilderai.com" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
             </div>
         </div>
+
+
         <div className='portfolio-item'>
-        <div className='portfolio-graphic-container'>
-           <img className='portfolio-item-graphic' src='/custom-web.jpeg' alt='Client Work Portfolio' />
+          <div className='portfolio-graphic-container'>
+              <img className='portfolio-item-graphic' src='/headshot-gen-min.png' alt='Client Work Portfolio' />
           </div>
-        <div className='portfolio-img-container'>
-           <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
+          <div className='portfolio-img-container'>
+              <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
           </div>
           <div className='portfolio-text-container'>
-            <p className='portfolio-text-header'>RANKI AI</p>
+            <p className='portfolio-text-header'>HeadshotGeneratorAI</p>
             <p className='portfolio-text-content'>Web App focused on centralizing all aspects of a customers product search to make the product search process more efficient.</p>
           </div>
           <hr className='portfolio-horizontal-line hr-dark'></hr>
           <div className='portfolio-btn-div'>
-          {/* <Link href='/portfolio/goldshield'><button type='button' className='portfolio-item-btn dark-text'>View case study <BsArrowRight className='portfolio-arrow arrow-dark'/></button></Link> */}
-          <div className='in-development'>
-            <div className='in-dev-container'>
-            <a href="https://ranki.ai/" target='_blank' rel='noreferrer' className='portfolio-link'><GoPrimitiveDot className='in-dev-dot'/><p className='in-dev-text'>In Development</p></a>
+            <a href="https://headshotgeneratorai.com" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
             </div>
-          </div>
-          </div>
         </div>
+
+        <div className='portfolio-item'>
+          <div className='portfolio-graphic-container'>
+              <img className='portfolio-item-graphic' src='/ranki-min.png' alt='Client Work Portfolio' />
+          </div>
+          <div className='portfolio-img-container'>
+              <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
+          </div>
+          <div className='portfolio-text-container'>
+            <p className='portfolio-text-header'>Ranki</p>
+            <p className='portfolio-text-content'>Web App focused on centralizing all aspects of a customers product search to make the product search process more efficient.</p>
+          </div>
+          <hr className='portfolio-horizontal-line hr-dark'></hr>
+          <div className='portfolio-btn-div'>
+            <a href="https://ranki.ai" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
+            </div>
+        </div>
+        <div className='portfolio-item'>
+          <div className='portfolio-graphic-container'>
+              <img className='portfolio-item-graphic' src='/venum-min.png' alt='Client Work Portfolio' />
+          </div>
+          <div className='portfolio-img-container'>
+              <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
+          </div>
+          <div className='portfolio-text-container'>
+            <p className='portfolio-text-header'>Venum</p>
+            <p className='portfolio-text-content'>Web App focused on centralizing all aspects of a customers product search to make the product search process more efficient.</p>
+          </div>
+          <hr className='portfolio-horizontal-line hr-dark'></hr>
+          <div className='portfolio-btn-div'>
+            <a href="https://venum.vercel.app" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
+            </div>
+        </div>
+
       </div>
     </div>
     <Footer />

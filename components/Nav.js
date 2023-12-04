@@ -46,7 +46,7 @@ function Nav() {
         <Link href="/" className="nav-logo">
           <div className="brand-img" id="brand-img">
           <img src='/ghost-logo.png' width='30' className="absolute-ghost"></img>
-            <img src='/modern-logo.png' alt="Brand Logo" id='nav-brand-img' />
+            <img src='/logo-transparent.png' alt="Brand Logo" id='nav-brand-img' />
           </div>
         </Link>
         <div className="nav-buttons">

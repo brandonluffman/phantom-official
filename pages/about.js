@@ -29,7 +29,7 @@ const about = () => {
         />
 
     <Head>
-          <title>Phantom Technologies | About</title>
+          <title>Phantom | About</title>
           <meta name="description" content="Phantom Technologies is a website development company with extensive experience building digital experiences for your business that rank on Google."/>
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
@@ -53,7 +53,7 @@ const about = () => {
       <div className='about-page-container'>
         <div className='about-landing'>
           <div className='about-landing-headers'>
-          <h2 className='about-landing-subheader'>PhantomAI</h2>
+          <h2 className='about-landing-subheader'>Phantom</h2>
           <h1 className='about-landing-header'>AI <span className='rank-color'>Automation</span></h1>
           </div>
         </div>
@@ -63,7 +63,7 @@ const about = () => {
             <div className='who-link'>
               <h2 className='who-header'>Who We Are</h2>
               <hr className='about-page-hr'></hr>
-              <p className='who-desc'>PhantomAI is an AI Development Firm headquartered in Arlington, VA that provides the highest-quality Artifical Intelligence solutions to businesses of all sizes. We are committed to helping our clients achieve their goals, and we will work with you until you see results. Our team is made up of experts who have years of experience in software development, data engineering, and machine learning. We have seen what works and what doesn&apos;t for companies, so we know how to help you reach your target audience. Our mission is to make sure that your business exceeds it&apos;s goals.</p>
+              <p className='who-desc'>Phantom is an AI Development Firm headquartered in New York City that provides the highest-quality Artifical Intelligence solutions to businesses of all sizes. We are committed to helping our clients achieve their goals, and we will work with you until you see results. Our team is made up of experts who have years of experience in software development, data engineering, and machine learning. We have seen what works and what doesn&apos;t for companies, so we know how to help you reach your target audience. Our mission is to make sure that your business exceeds it&apos;s goals.</p>
             </div>
             {/* <div className='who-link'>
               <h2 className='who-header'>Who We Are</h2>

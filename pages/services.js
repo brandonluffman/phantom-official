@@ -26,8 +26,8 @@ const services = () => {
                 }}
             />
          <Head>
-          <title>Phantom Technologies | Web Development & SEO Services</title>
-          <meta name="description" content="Phantom Technologies offers a variety of Web Development and SEO Services focused on building credibility and generating traffic."/>
+          <title>Phantom | Services</title>
+          <meta name="description" content="Phantom offers a variety of Web Development and SEO Services focused on building credibility and generating traffic."/>
           <meta charSet="utf-8" />
           <meta name="robots" content="index, follow" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>

@@ -34,8 +34,8 @@
 
 #nav-brand-img {
     transition: 0.35s all ease !important;
-    width:200px;
-    margin: 0rem 0rem 0rem 2rem;
+    width:150px;
+    margin: 0rem 0rem 0rem 4rem;
     transition:0.2s all ease;
     z-index:-1 !important;
 }

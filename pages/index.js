@@ -86,7 +86,7 @@ export default function Home({ posts }) {
         />
 
     <Head>
-          <title>PhantomAI | AI Driven Applications</title>
+          <title>Phantom | AI Driven Applications</title>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -118,7 +118,7 @@ export default function Home({ posts }) {
       <Nav />
         <div className="container-fluid landing-container" id="home">
           <div className="row landing-row">
-            <h1 className="landing-subheader">PhantomAI</h1>
+            <h1 className="landing-subheader">Phantom</h1>
             <h2 className="landing-header">AI Driven Applications</h2>
             <div className="landing-btns">
               <Link href='/project'><button className="landing-btn launch-btn">Start a Project</button></Link>
@@ -133,10 +133,10 @@ export default function Home({ posts }) {
             <div className="about-content-div">
               <div className='about-imgs-div'>
               <Image src='/ghost-logo.png' className="about-img about-brand-img" alt='Company Logo' loading="lazy" width='75' height='100' />
-              <h4 className='about-img-text'>PhantomAI is a world-class AI firm with deep domain expertise in building scalable, highly-responsive solutions. We employ an agile methodology and work closely with clients to ensure their success.</h4>
+              <h4 className='about-img-text'>Phantom is a world-class technology firm with deep domain expertise in building scalable, highly-responsive AI solutions. We employ an agile methodology and work closely with clients to ensure their success.</h4>
               </div>
               <div className='about-content-text-div'>
-                  <p className='about-content-header'>ELEVATE Your Business with PhantomAI</p>
+                  <p className='about-content-header'>ELEVATE Your Business with Phantom</p>
                   <h3 className='about-content-p'>We are a team of experts who can help you develop, implement, and deploy AI-powered tools.</h3>
                   <hr className='about-content-line'></hr>
                    <div className='web-imgs-div'>
