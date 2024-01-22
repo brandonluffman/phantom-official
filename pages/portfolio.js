@@ -81,7 +81,7 @@ const portfolio = () => {
             </div>
             <div className='portfolio-text-container'>
               <p className='portfolio-text-header'>ResumeBuilderAI</p>
-              <p className='portfolio-text-content'>AI Powered Investment Analytics </p>
+              <p className='portfolio-text-content'>Application centered around helping users build resumes, tailored for a particular job listing using Artificial Intelligence to increase the likelihood of receiving an interview.</p>
             </div>
             <hr className='portfolio-horizontal-line'></hr>
             <div className='portfolio-btn-div'>
@@ -99,7 +99,7 @@ const portfolio = () => {
           </div>
           <div className='portfolio-text-container'>
             <p className='portfolio-text-header'>HeadshotGeneratorAI</p>
-            <p className='portfolio-text-content'>Web App focused on centralizing all aspects of a customers product search to make the product search process more efficient.</p>
+            <p className='portfolio-text-content'>Application using the DALL-E API to generate headshots for users at a fraction of the cost.</p>
           </div>
           <hr className='portfolio-horizontal-line hr-dark'></hr>
           <div className='portfolio-btn-div'>
@@ -116,7 +116,7 @@ const portfolio = () => {
           </div>
           <div className='portfolio-text-container'>
             <p className='portfolio-text-header'>Ranki</p>
-            <p className='portfolio-text-content'>Web App focused on centralizing all aspects of a customers product search to make the product search process more efficient.</p>
+            <p className='portfolio-text-content'>Web application allowing users the ability to generate automated blog posts through Artificial Intelligence.</p>
           </div>
           <hr className='portfolio-horizontal-line hr-dark'></hr>
           <div className='portfolio-btn-div'>
@@ -132,7 +132,7 @@ const portfolio = () => {
           </div>
           <div className='portfolio-text-container'>
             <p className='portfolio-text-header'>Venum</p>
-            <p className='portfolio-text-content'>Web App focused on centralizing all aspects of a customers product search to make the product search process more efficient.</p>
+            <p className='portfolio-text-content'>AI Powered Investment Analytics for the financial markets.</p>
           </div>
           <hr className='portfolio-horizontal-line hr-dark'></hr>
           <div className='portfolio-btn-div'>
