@@ -9,52 +9,6 @@ import IndexPage from '../components/IndexPage';
 import Head from 'next/head';
 import Script from 'next/script';
 
-
-// const graphcms = new GraphQLClient(
-//     "https://api-us-east-1.hygraph.com/v2/cl6ftpszc2n0f01uhbzh3cz7s/master"
-//     );
-    
-//     const QUERY = gql`
-//       {
-//         posts {
-//           id
-//           title
-//           description
-//           datePublished
-//           slug
-//           content {
-//             html
-//           }
-//           author {
-//             name
-//             avatar {
-//               url
-//             }
-//           }
-//           coverPhoto {
-//             publishedAt
-//             createdBy {
-//               id
-//             }
-//             url
-//           }
-//           tag {
-//             tagDrop
-//           }
-//         }
-//       }
-//     `;
-    
-//     export async function getStaticProps() {
-//       const { posts } = await graphcms.request(QUERY);
-//       return {
-//         props: {
-//           posts,
-//         },
-//         revalidate: 30,
-//       };
-//     }
-
     
 
 const Blogs = ({ posts }) => {
