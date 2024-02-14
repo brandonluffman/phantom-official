@@ -72,6 +72,42 @@ const portfolio = () => {
           <a href="https://goldshield.vercel.app" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>View case study <BsArrowRight className='portfolio-arrow'/></button></a>
           </div>
         </div> */}
+
+<div className='portfolio-item'>
+          <div className='portfolio-graphic-container'>
+              <img className='portfolio-item-graphic' src='/ranki-min.png' alt='Client Work Portfolio' />
+          </div>
+          <div className='portfolio-img-container'>
+              <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
+          </div>
+          <div className='portfolio-text-container'>
+            <p className='portfolio-text-header'>Ranki</p>
+            <p className='portfolio-text-content'>Web application allowing users the ability to generate automated blog posts through Artificial Intelligence.</p>
+          </div>
+          <hr className='portfolio-horizontal-line hr-dark'></hr>
+          <div className='portfolio-btn-div'>
+            <a href="https://ranki.ai" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
+            </div>
+        </div>
+        <div className='portfolio-item'>
+          <div className='portfolio-graphic-container'>
+              <img className='portfolio-item-graphic' src='/venum-min.png' alt='Client Work Portfolio' />
+          </div>
+          <div className='portfolio-img-container'>
+              <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
+          </div>
+          <div className='portfolio-text-container'>
+            <p className='portfolio-text-header'>Venum</p>
+            <p className='portfolio-text-content'>AI Powered Investment Analytics for the financial markets.</p>
+          </div>
+          <hr className='portfolio-horizontal-line hr-dark'></hr>
+          <div className='portfolio-btn-div'>
+            <a href="https://venum.vercel.app" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
+            </div>
+        </div>
+
+
+
           <div className='portfolio-item goldshield-portfolio'>
             <div className='portfolio-graphic-container'>
             <img className='portfolio-item-graphic' src='/resumebuilder-min.png' alt='Client Work Portfolio' />
@@ -107,38 +143,7 @@ const portfolio = () => {
             </div>
         </div>
 
-        <div className='portfolio-item'>
-          <div className='portfolio-graphic-container'>
-              <img className='portfolio-item-graphic' src='/ranki-min.png' alt='Client Work Portfolio' />
-          </div>
-          <div className='portfolio-img-container'>
-              <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
-          </div>
-          <div className='portfolio-text-container'>
-            <p className='portfolio-text-header'>Ranki</p>
-            <p className='portfolio-text-content'>Web application allowing users the ability to generate automated blog posts through Artificial Intelligence.</p>
-          </div>
-          <hr className='portfolio-horizontal-line hr-dark'></hr>
-          <div className='portfolio-btn-div'>
-            <a href="https://ranki.ai" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
-            </div>
-        </div>
-        <div className='portfolio-item'>
-          <div className='portfolio-graphic-container'>
-              <img className='portfolio-item-graphic' src='/venum-min.png' alt='Client Work Portfolio' />
-          </div>
-          <div className='portfolio-img-container'>
-              <img className='portfolio-item-img' src='/ranki.png' alt='Client Logo' />
-          </div>
-          <div className='portfolio-text-container'>
-            <p className='portfolio-text-header'>Venum</p>
-            <p className='portfolio-text-content'>AI Powered Investment Analytics for the financial markets.</p>
-          </div>
-          <hr className='portfolio-horizontal-line hr-dark'></hr>
-          <div className='portfolio-btn-div'>
-            <a href="https://venum.vercel.app" target='_blank' rel='noreferrer'><button type='button' className='portfolio-item-btn'>Try the app <BsArrowRight className='portfolio-arrow'/></button></a>
-            </div>
-        </div>
+
 
       </div>
     </div>

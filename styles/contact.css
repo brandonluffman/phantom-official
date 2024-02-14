@@ -8,6 +8,7 @@ input:focus, textarea:focus {
     padding:2rem 2rem;
     font-size:2rem;
     margin-bottom:5rem;
+    position: relative;
 }
 .contact-form {
     width:40%;

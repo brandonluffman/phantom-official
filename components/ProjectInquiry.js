@@ -3,59 +3,37 @@ import styled from "styled-components";
 import { BsPaperclip } from 'react-icons/bs';
 import emailjs from "@emailjs/browser";
 import { MdClear } from 'react-icons/md';
+import AlertBanner from './AlertBanner';
 
 
 
 const ProjectInquiry = () => {
     const inquiry = useRef();
-
-    const closeBtn = (e) => {
-      e.preventDefault();
-      document.getElementById('thank_you').style.display = 'none';
-    }
-  
+    const [alertMessage, setAlertMessage] = useState('')
     const sendEmail = (e) => {
       e.preventDefault();
-
-    document.getElementById('btn-ring').style.display = 'block';
-
-      emailjs
-        .sendForm(
-          "service_d3p9eul",
-          "template_yrm1kdx",
-          inquiry.current,
-          "q1bvSeQBMko2AZ2ax"
-        )
-        .then(
-          (result) => {
-            document.getElementById('btn-ring').style.display = 'none';
-            e.target.reset();
-            document.getElementById('thank_you').style.display = 'block';
-            setTimeout(function(){
-                document.getElementById('thank_you').style.display = 'none';
-             }, 3000);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      setAlertMessage('Thanks for reaching out!');
+      setTimeout(() => {
+        setAlertMessage('');
+      }, 2000);
+      inquiry.current.reset();
     };
 
   return (
     <div>
      
     <div className='project-contact-container'>
-    <div id="thank_you" className='thankyou-div' style={{display: 'none'}}>
+    {/* <div id="thank_you" className='thankyou-div' style={{display: 'none'}}>
             <p className='thankyou-thanks'>Thanks for reaching out! &#129309;</p><br></br>
             <p className='thankyou-thanks'>We&apos;ll be in touch.</p>
             <MdClear className='thankyou-close' onClick={closeBtn} />
-        </div>
+        </div> */}
     <form ref={inquiry} onSubmit={sendEmail} className='project-form'>
         <h6 className='project-header'>Hey, let&apos;s get to work. <span className='hand-emoji'>&#128075;</span></h6>
         <p className='project-subheader'>I&apos;m interested in... *</p>
         <div className='form-app-selection'>
-                <input id='select-1' type="radio" value="Business Website" className="radio-input" name="interest" />
-                <label className='radio-label' htmlFor='select-1'>Custom Chatbot</label>
+                {/* <input id='select-1' type="radio" value="Business Website" className="radio-input" name="interest" />
+                <label className='radio-label' htmlFor='select-1'>Custom Chatbot</label> */}
                 <input id='select-2' type="radio" name="interest" value="Custom Website" className="radio-input"/>
                 <label className='radio-label' htmlFor='select-2'>Custom AI Application</label>
                 <input id='select-3' type="radio" name="interest" value="Ecommerce Website" className="radio-input"/>
@@ -91,6 +69,7 @@ const ProjectInquiry = () => {
         <div className='form-button'>
                 <button className='project-form-btn' value="Send" type='submit'><p className='form-btn-p'>Send Request</p><span id='btn-ring' /></button>
         </div>
+        <AlertBanner message={alertMessage} onClose={() => setAlertMessage('')} className='project-alert' />
         </form>
         </div>
     </div>

@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5 , h6 {
 
 .launch-btn {
     background:none;
-    border: 1px solid #55b0e5;
+    /* border: 1px solid #55b0e5; */
     margin-right:1rem;
     background-color:#92d7ff;
 }
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5 , h6 {
 }
 
 .learn-btn {
-    border: 1px solid rgb(69, 69, 104);
+    /* border: 1px solid rgb(69, 69, 104); */
     background-color: rgb(107, 107, 147);
 
 }

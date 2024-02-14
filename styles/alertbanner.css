@@ -1,0 +1,66 @@
+/* components/AlertBanner.module.css */
+.alertBanner {
+    /* padding: 10px; */
+    background-color: rgb(46, 231, 95); /* Customize the color */
+    color: black;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    z-index: 1000;
+    border-radius: 20px;
+    /* padding:4rem; */
+    /* color:var(--dark-blue); */
+    border: 2px solid var(--primary);
+    padding:0.5rem 0rem;
+    margin:2rem 0rem 0rem 0rem;
+
+  }
+
+  .banner2alert {
+    top: -200%;
+  }
+
+  .alertBanner-inner {
+    /* position: relative; */
+  }
+
+  .project-alert {
+    font-size: 3rem !important;
+    margin-bottom: 4rem;
+  }
+  
+  .alertBanner-inner p {
+    /* margin-bottom: 2rem; */
+    font-size: 2rem;
+    margin: 0;
+  }
+  /* .alertCloseBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-left: 0; 
+    color: black;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+} */
+
+.register-white {
+    /* box-shadow: 1px 1px 8px rgba(255,255,255,0.3);
+    border: 1px solid var(--primary); */
+}
+
+.register-white:hover {
+    /* box-shadow: 1px 1px 12px rgba(188, 188, 188, 0.3);
+    border: 1px solid var(--primary); */
+}
+  
+  .alertCloseBtn:hover {
+    color: var(--primary);
+  }
+  

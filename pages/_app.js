@@ -20,6 +20,7 @@ import '../styles/seo.css';
 import '../styles/webdevelopment.css';
 import '../styles/webservices.css';
 import '../styles/localseo.css';
+import '../styles/alertbanner.css';
 
 
 config.autoAddCss = false
