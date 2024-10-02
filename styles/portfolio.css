@@ -2,9 +2,157 @@
     padding-top:14rem;
     height:auto;
     text-align: center;
-    padding: 14rem 4rem 0rem 4rem !important;
+    padding: 0rem 4rem 0rem 4rem !important;
     margin-bottom:10rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+.portfolio-container h6 {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.portfolio-container h1 {
+    font-size: 4.5rem;
+    width: 80%;
+}
+
+.portfolio-grid-container {
+    padding: 0rem 2rem;
+    padding-bottom: 200px;
+}
+
+.portfolio-grid-container > h2 {
+    font-size: 3rem;
+    letter-spacing: -0.1vw;
+    margin-bottom: 4rem;
+    
+}
+.portfolio-grid {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    display: flex;
+    margin-bottom: 10rem;
+    justify-content: center;
+    align-content: center;
+    gap:20px;
+
+}
+
+.portfolio-grid div {
+    border: 1px solid rgb(230, 230, 230);
+    justify-content: center;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: -0.05vw;
+    font-size: 2rem;
+    position: relative;
+    width: 200px;
+    transition: 0.2s ease all;
+    box-shadow: 1px 1px 12px rgba(200, 200, 200, 0.3);
+}
+
+.portfolio-grid div:hover {
+    background-color: rgb(217, 215, 215);
+}
+
+
+.portfolio-grid div img {
+    height: 110px;
+}
+.portfolio-grid div:first-of-type img, .portfolio-grid div:nth-of-type(3) img {
+    height: 140px;
+}
+
+.background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff; /* Dark background */
+    overflow: hidden;
+  }
+  
+
+.tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size:1.5rem;
+    background-color: rgb(148, 191, 255);
+    color: black;
+    font-weight: 700;
+    text-transform: none;
+}
+
+
+
+  .arrow-container {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .portfolio-arrow {
+      position: absolute;
+      bottom:50px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
+      animation:bounce 2s infinite;
+      margin:0 auto;
+      justify-content: center;
+      text-align: center;
+  }
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Initial and final position (no vertical movement) */
+      }
+      40% {
+        transform: translateY(-30px); /* Bounce up */
+      }
+      60% {
+        transform: translateY(-15px); /* Bounce down slightly */
+      }
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .portfolio-headers {
     margin:6rem 10rem 10rem 10rem;
@@ -22,11 +170,11 @@
         color: rgb(100, 100, 100);
         text-align: left;
 }
-.portfolio-grid {
+/* .portfolio-grid {
     display: grid;
     gap:50px;
     grid-template-columns: repeat(2,1fr);
-}
+} */
 .portfolio-img-container {
     /* background-image: url('/goldshield-logo.webp');
     background-size: contain;

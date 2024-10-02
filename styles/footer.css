@@ -51,7 +51,7 @@ padding:0rem 0.2rem;
 }
 
 .footer-brand-logo {
-    width:140px;
+    width:210px;
     /* height:150px; */
     /* margin-bottom:2rem; */
 }
@@ -64,7 +64,9 @@ padding:0rem 0.2rem;
 
 .footer-links-header {
     font-size:2.5rem;
-    font-weight:500;
+    font-weight:600;
+    color: rgb(10, 10, 10);
+    letter-spacing: -0.1vw;
 }
 
 .footer-top {
@@ -88,6 +90,12 @@ padding:0rem 0.2rem;
     text-decoration: none !important;
     cursor: pointer;
     margin-bottom:1rem;
+    transition: 0.2s ease-in-out all;
+}
+
+.footer-link:hover {
+    /* text-decoration: underline !important; */
+    color: rgb(50, 50, 50);
 }
 
 .footer-brand-img {
@@ -102,7 +110,7 @@ Link {
 .copyright-footer {
     width:100%;
     text-align: center;
-    font-size:1.3rem;
+    font-size:1.5rem;
 }
 
 .service-subelement > svg > path {
@@ -110,7 +118,7 @@ Link {
 }
 .footer-brand-ghost {
     width:40px;
-    margin-right:-1.5rem;
+    margin-right:-2.5rem;
     z-index: 9999;
     position: relative;
     /* padding-bottom:1.1rem; */

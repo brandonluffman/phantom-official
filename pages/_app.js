@@ -21,6 +21,8 @@ import '../styles/webdevelopment.css';
 import '../styles/webservices.css';
 import '../styles/localseo.css';
 import '../styles/alertbanner.css';
+import '../styles/strategy.css';
+import '../styles/login.css';
 
 
 config.autoAddCss = false

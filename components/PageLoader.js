@@ -5,7 +5,7 @@ const PageLoader = () => {
   return (
     <div className='page-loader-container'>
       <div className='spinner'>
-        <ImSpinner9 />
+        {/* <ImSpinner9 /> */}
       </div>
     </div>
   )

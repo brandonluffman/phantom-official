@@ -6,18 +6,21 @@
 }
 
 .spinner {
-    animation-name: spin;
-    animation-duration: 2000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-    font-size: 10rem; 
-  }
-
-@keyframes spin {
-    0% {
-        transform:rotate(0deg);
-    }
-    50% {
-        transform:rotate(360deg);
-    }
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #000000;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 0.75s linear infinite;
 }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

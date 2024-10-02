@@ -22,6 +22,15 @@
     box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.05);
 }
 
+.scroll .absolute-ghost {
+    opacity: 0;
+}
+
+.absolute-ghost {
+    transition: 0.2s ease-in-out all;
+}
+
+
 #navbar {
     transition:0.3s all ease !important;
 }
@@ -35,7 +44,7 @@
 #nav-brand-img {
     transition: 0.35s all ease !important;
     width:150px;
-    margin: 0rem 0rem 0rem 4rem;
+    margin: 0rem 0rem 0rem 2rem;
     transition:0.2s all ease;
     z-index:-1 !important;
 }
@@ -44,6 +53,42 @@
     cursor:pointer;
 }
 
+.nav-menu-desktop {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+
+}
+
+.nav-menu-desktop > p {
+    font-size: 1.75rem;
+    padding: 0;
+    margin: 0;
+    transition: 0.2s ease all;
+    font-weight: 500;
+}
+
+.nav-menu-desktop > p:nth-of-type(4) {
+    border: 1px solid rgb(230, 230, 230);
+    background-color: #b2dcff;
+    border-radius: 10px;
+    color: black;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.nav-menu-desktop > p:nth-of-type(4):hover {
+    background-color: #6eb1e9;
+}
+
+.nav-menu-desktop > p:hover {
+    color: black;
+    cursor: pointer;
+}
 .nav-menu {
     position: fixed;
     right: 100%;
@@ -86,6 +131,10 @@
 .hamburger-btn:hover {
     cursor: pointer;
 }
+
+.navbar #nav-brand-img {
+    opacity: 0;
+}
 .nav-contact-btn {
     background: black;
     color:white;
@@ -104,7 +153,13 @@
     transform:translateY(-2px);
 }
 .nav-buttons {
-    display: flex;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-buttons {
+        display: flex;
+    }
 }
 
 .nav-lang-btn {
@@ -154,10 +209,15 @@
 }
 
 .absolute-ghost {
-    margin-right:-50px;
+    margin-right:-37px;
     z-index:9999 !important;
     position: relative;
-    padding-top:0.5rem;
+    left: 35px;
+}
+
+.absolute-ghost:hover {
+    /* background-color: red;
+    border-radius: 50%; */
 }
 @media only screen and (max-width: 870px) {
     .navbar {
@@ -190,6 +250,19 @@
     }
     .nav-item {
         font-size:2.5rem !important;
+    }
+
+    .nav-menu-desktop {
+        display: none;
+    }
+
+   #nav-brand-img {
+        /* padding-left: 0;
+        margin-left: 0; */
+    }
+
+    .hamburger-btn {
+        display: flex;
     }
 }
 

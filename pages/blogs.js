@@ -56,9 +56,11 @@ const Blogs = ({ posts }) => {
       <Nav />
 
     <div className='blogs-container'>
-      <h3 className='blogs-header'>Blogs</h3>
+      <div>
+      <h3 className='blogs-header'>Insights</h3>
       <div className='blogs-div'>
-      <h5 className='blog-upcoming'>Blog Coming Soon!</h5>
+      <h5 className='blog-upcoming'>Posts Coming Soon</h5>
+      </div>
       </div>
       {/* <main className='blogs-main'> 
       {posts.map((post) => (

@@ -49,10 +49,17 @@ function Nav() {
             <img src='/logo-transparent.png' alt="Brand Logo" id='nav-brand-img' />
           </div>
         </Link>
+        <ul className="nav-menu-desktop">
+        <Link href='/portfolio'><p>Portfolio</p></Link>
+        <Link href='/strategy'><p>Strategy</p></Link>
+          <Link href='/blogs'><p>Insights</p></Link>
+          <Link href='/login'><p>Investor Login</p></Link>
+
+        </ul>
         <div className="nav-buttons">
           {/* <button className="nav-lang-btn" type='button'>En</button> */}
           {/* <Link href='/project'><button className='nav-contact-btn' type='button'><img src='/ranki-transp-logo.png' width='20'></img>RankiAI <span className='beta-tag'>Beta</span></button></Link> */}
-          <Link href='/project'><button className='nav-contact-btn' type='button'>Get in contact</button></Link>
+          {/* <Link href='/project'><button className='nav-contact-btn' type='button'>Get in contact</button></Link> */}
           {isActive? <MdClear className='hamburger-btn' onClick={toggleNav}/>:<MdMenu className='hamburger-btn' onClick={toggleNav} />}
         </div>
         <ul className="nav-menu" id='nav-menu' style={{right: showMe? "0":"-100%"}}>

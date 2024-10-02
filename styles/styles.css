@@ -38,6 +38,20 @@ h1, h2, h3, h4, h5 , h6 {
     letter-spacing: -0.05vw;
 }
 
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 /* */
 
 
@@ -100,22 +114,26 @@ h1, h2, h3, h4, h5 , h6 {
 }
 
 .landing-header {
-    font-size: 12rem;
+    font-size: 10rem !important;
     margin-bottom:14rem;
     word-spacing:-0.3vw;
     z-index:99;
     font-stretch: narrower;
-    letter-spacing: -.5vw;
+    letter-spacing: -.4vw;
     transition:0.3s ease;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
+    line-height: 13vh;
+    width: 80%;
+    color: rgb(51, 51, 51);
 }
 
 .landing-subheader {
-    color:rgb(100, 100, 100);
-    font-size:3rem !important;
-    font-weight:200;
+    color:rgb(50, 50, 50);
+    font-size:2.5rem !important;
+    font-weight:400;
     margin-bottom:2rem !important;
     z-index:99 !important;
+    letter-spacing: -0.12vw;
 }
 
 .landing-btn {
@@ -129,32 +147,36 @@ h1, h2, h3, h4, h5 , h6 {
     z-index:999 !important;
     font-weight: 500;
     margin-bottom:25rem;
+    width: 250px;
 }
 
 .launch-btn {
     background:none;
     /* border: 1px solid #55b0e5; */
     margin-right:1rem;
-    background-color:#92d7ff;
+    background-color:#c9dbea;
+    color: #150033;
 }
 
 .launch-btn:hover {
     cursor:pointer;
-    color:#92d7ff;
     box-shadow: 0px 15px 20px rgba(62, 27, 160, 0.25);
-    background-color: #fff;
+    background-color: #ffffff;
     transform: translateY(-5px);
+    color:#150033;
+
 }
 
 .learn-btn {
     /* border: 1px solid rgb(69, 69, 104); */
-    background-color: rgb(107, 107, 147);
+    background-color: #150033;
+    color: rgb(255, 255, 255);
 
 }
 
 .learn-btn:hover {
     cursor:pointer;
-    color:rgb(107, 107, 147);
+    color:#150033;
     box-shadow: 0px 15px 20px rgba(62, 27, 160, 0.25);
     background-color: #fff;
     transform: translateY(-5px);

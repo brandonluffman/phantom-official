@@ -20,7 +20,7 @@ const Footer = () => {
                 {/* <a href='https://twitter.com/PhxntomTech' target='_blank' rel='noreferrer' aria-label="Twitter"><FontAwesomeIcon className="fa-brands fa-twitter social-icon" icon={faTwitter} alt='Social Icon' /></a>
                 <a href='https://www.facebook.com/profile.php?id=100084723462596' target='_blank' rel='noreferrer' aria-label="Facebook"><FontAwesomeIcon className="fa-brands fa-facebook social-icon" icon={faFacebookF} alt='Social Icon' /></a>
                 <a href='https://www.instagram.com/phxntomtechnologies/' target='_blank' rel='noreferrer' aria-label="Instagram"><FontAwesomeIcon className="fa-brands fa-instagram social-icon" icon={faInstagram} alt='Social Icon' /></a> */}
-                <a href='https://www.linkedin.com/company/phxntomtech' target='_blank' rel='noreferrer' aria-label="Linkedin" ><FontAwesomeIcon className="fa-brands fa-linkedin social-icon" icon={faLinkedinIn} alt='Social Icon' /></a>
+                {/* <a href='https://www.linkedin.com/company/phxntomtech' target='_blank' rel='noreferrer' aria-label="Linkedin" ><FontAwesomeIcon className="fa-brands fa-linkedin social-icon" icon={faLinkedinIn} alt='Social Icon' /></a> */}
               </div>
               </div>
               
